@@ -180,19 +180,19 @@
                         <div class="row mb-20">
                             <div class="col-md-4">
                                 <label><?= lang_profile($lang_id, 'old_password') ?></label>
-                                <input type="password" class="form-control" name="username" id="username" value="">
+                                <input type="password" class="form-control" name="password" id="password" value="">
                             </div>
                         </div>
                         <div class="row mb-20">
                             <div class="col-md-4">
                                 <label><?= lang_profile($lang_id, 'new_password') ?></label>
-                                <input type="password" class="form-control" name="username" id="username" value="">
+                                <input type="password" class="form-control" name="newpassword" id="newpassword" value="">
                             </div>
                         </div>
                         <div class="row mb-20">
                             <div class="col-md-4">
                                 <label><?= lang_profile($lang_id, 'confirm_new_password') ?></label>
-                                <input type="password" class="form-control" name="username" id="username" value="">
+                                <input type="password" class="form-control" name="con_newpassword" id="con_newpassword" value="">
                             </div>
                         </div>
                         <div class="row mb-10">
