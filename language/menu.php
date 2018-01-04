@@ -13,6 +13,9 @@
                     case 'logout':
                         return 'logout';
                         break;
+                    case 'evaluation':
+                        return 'evaluation';
+                        break;
                 }
             //ภาษาไทย
             case 'th':
@@ -25,6 +28,9 @@
                         break;
                     case 'logout':
                         return 'ออกจากระบบ';
+                        break;
+                    case 'evaluation':
+                        return 'แบบประเมิน';
                         break;
                 }
         }

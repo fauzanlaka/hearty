@@ -5,7 +5,7 @@
     $login = mysqli_real_escape_string($con, $_POST['username']);
     $loginText = addslashes($login);
     $password = mysqli_real_escape_string($con, $_POST['password']);
-    $passwordText = addslashes($password);
+    $passwordText = addslashes(md5(md5(md5($password))));
      
     $user = mysqli_query($con, "SELECT * FROM user WHERE u_username='$loginText' AND u_password='$passwordText'");
     $user_num = mysqli_num_rows($user);

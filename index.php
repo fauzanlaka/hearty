@@ -80,6 +80,9 @@
                             case 'setting':
                                 include 'module/profile/setting.php';
                                 break;
+                            case 'biodata':
+                                include 'module/evaluation/main.php';
+                                break;
                     }
                 ?>
             </div>

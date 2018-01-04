@@ -8,17 +8,17 @@
 ?>
 
     
-    <div class="page-title">
-        <div>
-            <h1><i class="fa fa-user-circle-o"></i> <?= index($lang_id, 'profile') ?></h1>
-            <p><?= index($lang_id, 'database') ?></p>
-        </div>
-        <div>
-            <ul class="breadcrumb">
-                <li><i class="fa fa-home fa-lg"></i></li>
-            </ul>
-        </div>
+<div class="page-title">
+    <div>
+        <h1><i class="fa fa-user-circle-o"></i> <?= index($lang_id, 'profile') ?></h1>
+        <p><?= index($lang_id, 'database') ?></p>
     </div>
+    <div>
+        <ul class="breadcrumb">
+                <li><i class="fa fa-home fa-lg"></i></li>
+        </ul>
+    </div>
+</div>
 <div class="row">
     
 <div class="col-md-12">
@@ -179,12 +179,6 @@
                         </div>
                         <div class="row mb-20">
                             <div class="col-md-4">
-                                <label><?= lang_profile($lang_id, 'old_password') ?></label>
-                                <input type="password" class="form-control" name="password" id="password" value="">
-                            </div>
-                        </div>
-                        <div class="row mb-20">
-                            <div class="col-md-4">
                                 <label><?= lang_profile($lang_id, 'new_password') ?></label>
                                 <input type="password" class="form-control" name="newpassword" id="newpassword" value="">
                             </div>
@@ -193,11 +187,13 @@
                             <div class="col-md-4">
                                 <label><?= lang_profile($lang_id, 'confirm_new_password') ?></label>
                                 <input type="password" class="form-control" name="con_newpassword" id="con_newpassword" value="">
+                                <div id="confirm_new_password_alert"></div>
                             </div>
                         </div>
+                        <input type="hidden" name="u_id" id="u_id" value="<?= $u_id ?>">
                         <div class="row mb-10">
                             <div class="col-md-12">
-                                <a class="btn btn-primary" onclick="username_edit('module/profile/action/usernameEdit.php', 'username_form')"><i class="fa fa-fw fa-lg fa-check-circle"></i> Save</a>
+                                <a class="btn btn-primary" onclick="username_edit('module/profile/action/usernameEdit.php', 'username_form' , '<?= $lang_id ?>')"><i class="fa fa-fw fa-lg fa-check-circle"></i> Save</a>
                             </div>
                         </div>
                     </form>
