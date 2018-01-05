@@ -2,8 +2,8 @@
 function formLoad(path, id, usrid){
     var URL = path + "?id=" + id + "&userid=" + usrid;
     var data = null;
-    document.getElementById('content').innerHTML = "Loading...";
-    ajaxLoadFrw("GET", URL, data, "content");
+    document.getElementById('ovl').style.display = "block";
+    ajaxLoadFrw("GET", URL, data, "contentIn");
     alert(url);
 }
 //--------------------------------------Data insert--------------------------------------

@@ -4,17 +4,16 @@
             //ภาษาอังกฤษ
             case 'en':
                 switch ($lang_value){
-                    case 'evaluation':
-                        return "evaluation";
+                    case 'add new':
+                        return "add new";
                         break;
                 }
             //ภาษาอังกฤษ
             case 'th':
                 switch ($lang_value){
-                    case 'evaluation':
-                        return 'แบบประเมิน';
+                    case 'add new':
+                        return 'เพิ่มใหม่';
                         break;
-                    case 'profile':
                 }
         }
     }
