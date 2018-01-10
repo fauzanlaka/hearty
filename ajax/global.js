@@ -31,31 +31,10 @@ function alertClose2(){
 function deleteAlertClose(){
     document.getElementById('deleteAlert').style.display = 'none';
 }
-//--------------------------------------selector search box--------------------------------------
-function msOverList(el){
-    el.style.backgroundColor = '#00c0ef';
-    el.style.cursor = 'pointer';
-}
-function msOutList(el){
-    el.style.backgroundColor = '#f9fafc';
-}
-function hideList(){
-    document.getElementById('listbox').style.display = 'none';
-}
-//--------------------------------------Data row delete--------------------------------------
-function dbRowDelete(path, id, idRe){
+//-------------------------------------checking data----------------------------------------------
+function dataCheck(path, formId, msg){
     var URL = path + "?dummy=" + Math.random();
-    var result = confirm("การลบข้อมูลอาจมีผลกระทบกับข้อมูลอื่นๆ ท่านแน่ใจหรือไม่ว่าต้องการลบข้อมูล");
-    if(result){
-	var data = "&id=" + id + "&idRe=" + idRe;
-	ajaxLoadFrw('post', URL, data, '');
-    }
-}
-//--------------------------------------open hidden data--------------------------------------
-function openHide(id){
-    if(document.getElementById(id).style.display == "none"){
-        document.getElementById(id).style.display = "block";
-    }else if(document.getElementById(id).style.display == "block"){
-        document.getElementById(id).style.display = "none";
-    }
+    var data = getFrmData(formId);
+    document.getElementById(msg).innerHTML = "<font color='orange'><b>checking...</b></font>";
+    ajaxLoadFrw('post', URL, data, '');
 }
