@@ -2,7 +2,7 @@
 function formLoad(path, id, usrid){
     var URL = path + "?id=" + id + "&userid=" + usrid;
     var data = null;
-    document.getElementById('ovl').style.display = "block";
+    document.getElementById('contentIn').innerHTML = "Loading...";
     ajaxLoadFrw("GET", URL, data, "contentIn");
     alert(url);
 }

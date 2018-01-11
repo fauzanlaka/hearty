@@ -25,16 +25,6 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div id="ovl" style="display: none">
-                    <div class="overlay">
-                        <div class="m-loader mr-20">
-                          <svg class="m-circular" viewBox="25 25 50 50">
-                                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
-                          </svg>
-                        </div>
-                        <h3 class="l-text">Loading</h3>
-                      </div>
-                </div>
                 <div class="card-title-w-btn">
                     <h3 class="title"><?= language($lang_id, 'all') ?></h3>
                     <p><a class="btn btn-primary icon-btn" href="#" onclick="formLoad('module/evaluation/form/addNewPerson.php', '', '<?= $operator ?>')"><i class="fa fa-plus"></i><?= language($lang_id, 'add new') ?></a></p>
@@ -129,7 +119,7 @@
                                 <td><?= personInfo($pes_id, 'pes_idcard', $connect) ?></td>
                                 <td><?= personInfo($pes_id, 'pes_name_th', $connect) ?> <?= personInfo($pes_id, 'pes_lastname_th', $connect) ?></td>
                                 <td><?= language($lang_id, personInfo($pes_id, 'pes_gender', $connect)) ?></td>
-                                <td><button class="btn btn-warning"><i class="fa fa-edit"></i></button></td>
+                                <td><a href="#" onclick="formLoad('module/evaluation/form/personInfo.php', '<?= $pes_id ?>', '<?= $operator ?>')"><button class="btn btn-warning"><i class="fa fa-edit"></i></button></a></td>
                             </tr>
                             <?php
                                 }

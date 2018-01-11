@@ -124,6 +124,9 @@
                     case 'edit':
                         return 'edit';
                         break;
+                    case 'client photo':
+                        return 'photo';
+                        break;
                 }
             //ภาษาอังกฤษ
             case 'th':
@@ -247,6 +250,9 @@
                         break;
                     case 'edit':
                         return 'แก้ไข';
+                        break;
+                    case 'client photo':
+                        return 'รูปภาพ';
                         break;
                 }
         }
