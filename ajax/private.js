@@ -39,6 +39,7 @@ function addNewPerson(path, formId){
     }else{
         var URL = path + "?dummy=" + Math.random();
         var data = getFrmData(formId);
+        
         //radio button data pes_interpreter
         var pes_interptreter = "";
         var num_itp = biodataForm.elements['pes_interpreter'].length;
@@ -57,8 +58,51 @@ function addNewPerson(path, formId){
                 var etnValue = etn.value;
             }
         }
+        
         document.getElementById('processing').innerHTML = "Processing...";
         var data = data + "&iptValue=" + iptValue + "&etnValue=" + etnValue;
         ajaxLoadFrw('post', URL, data, 'content');
     }
+}
+function personUpdate(path, formId){
+    var URL = path + "?dummy=" + Math.random();
+    var data = getFrmData(formId);
+    //radio button data pes_interpreter
+    var pes_interptreter = "";
+    var num_itp = biodataForm.elements['pes_interpreter'].length;
+    for(i=0; i<num_itp; i++){
+        var ipt = biodataForm.elements['pes_interpreter'][i];
+        if(ipt.checked){
+            var iptValue = ipt.value;
+        }
+    }
+    //radio button data pes_ethnic
+    var pes_interptreter = "";
+    var num_etn = biodataForm.elements['pes_ethnic'].length;
+    for(i=0; i<num_etn; i++){
+        var etn = biodataForm.elements['pes_ethnic'][i];
+        if(etn.checked){
+            var etnValue = etn.value;
+        }
+    }
+    document.getElementById('processing').innerHTML = 'processing...';
+    var data = data + "&iptValue=" + iptValue + "&etnValue=" + etnValue;
+    ajaxLoadFrw('post', URL, data, 'content');
+}
+function consentAdd(path, formId){
+    var URL = path + "?dummy=" + Math.random();
+    var data = getFrmData(formId);
+    
+    //radio button data pes_permission_conduct
+    var pes_permission_conduct = "";
+    var num_pc = consentForm.elements['pes_permission_conduct'].length;
+    for(i=0; i<num_pc; i++){
+        var pc = consentForm.elements['pes_permission_conduct'][i];
+        if(pc.checked){
+            var pcValue = pc.value;
+        }
+    }
+    document.getElementById('processing').innerHTML = 'processing...';
+    var data = data + "&pcValue=" + pcValue;
+    ajaxLoadFrw('post', URL, data, 'content');
 }

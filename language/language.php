@@ -4,6 +4,9 @@
             //ภาษาอังกฤษ
             case 'en':
                 switch ($lang_value){
+                    case 'save in language':
+                        return 'fill in';
+                        break;
                     case 'setting':
                         return "setting";
                         break;
@@ -36,6 +39,9 @@
                         break;
                     case 'background information':
                         return 'background information';
+                        break;
+                    case 'consent':
+                        return 'consent';
                         break;
                     case 'Interviewee’s Name':
                         return 'Interviewee’s Name';
@@ -127,10 +133,79 @@
                     case 'client photo':
                         return 'photo';
                         break;
+                    //----------------part2--------------------------
+                    case 'Do you have any questions':
+                        return 'Do you have any questions?';
+                        break;
+                    case 'ok':
+                        return 'Yes';
+                        break;
+                    case 'not':
+                        return 'No';
+                        break;
+                    case 'Do I have your permission to conduct the evaluation for your case':
+                        return 'Do I have your permission to conduct the evaluation for your case';
+                        break;
+                    //----------------part3--------------------------
+                    case 'PSYCHOSOCIAL HISTORY PRE-ARREST':
+                        return 'psychosocial history pre-arrest';
+                        break;
+                    case 'How many years did you attend school':
+                        return 'How many years did you attend school';
+                        break;
+                    case 'What is your primary occupation';
+                        return 'how many years did you attend school';
+                        break;
+                    case 'What is your marital status':
+                        return 'what is your marital status?';
+                        break;
+                    case 'Single':
+                        return 'single';
+                        break;
+                    case 'Married':
+                        return 'married';
+                        break;
+                    case 'Divorced':
+                        return 'divorced ';
+                        break;
+                    case 'Widowed':
+                        return 'widowed';
+                        break;
+                    case 'Other':
+                        return 'other';
+                        break;
+                    case 'Specify':
+                        return 'specify';
+                        break;
+                    case 'How many children do you have':
+                        return 'How many children do you have?';
+                        break;
+                    case 'Have you had any major Illnesses':
+                        return 'Have you had any major Illnesses?';
+                        break;
+                    case 'have':
+                        return 'yes';
+                        break;
+                    case 'not have':
+                        return 'no';
+                        break;
+                    case 'Have you had any injuries':
+                        return 'Have you had any injuries?';
+                        break;
+                    case 'Have you had any surgeries':
+                        return 'have you had any surgeries?';
+                        break;
+                    case 'Are you currently taking any medications':
+                        return 'Are you currently taking any medications?';
+                        break;
+                    
                 }
             //ภาษาอังกฤษ
             case 'th':
                 switch ($lang_value){
+                    case 'save in language':
+                        return 'บันทึกเป็นภาษา';
+                        break;
                     case 'setting':
                         return 'ตั้งค่า';
                         break;
@@ -254,7 +329,75 @@
                     case 'client photo':
                         return 'รูปภาพ';
                         break;
-                }
+                    case 'consent':
+                        return 'ความยินยอม';
+                        break;
+                    //----------------part2--------------------------
+                    case 'Do you have any questions':
+                        return 'ท่านมีคำถามหรือไม่ ?';
+                        break;
+                    case 'ok':
+                        return 'ได้';
+                        break;
+                    case 'not':
+                        return 'ไม่ได้';
+                        break;
+                    case 'Do I have your permission to conduct the evaluation for your case':
+                        return 'ท่านอนุญาตให้ข้าพเจ้าดำเนินการประเมินสำหรับใช้ในคดีของท่านหรือไม่?';
+                        break;
+                    //----------------part3--------------------------
+                    case 'PSYCHOSOCIAL HISTORY PRE-ARREST':
+                        return 'ประวัติทางด้านจิตใจและสังคมก่อนถูกจับ (จิตสังคม)';
+                        break;
+                    case 'How many years did you attend school':
+                        return 'ได้รับการศึกษาหรือเรียนหนังสือเป็นเวลากี่ปี';
+                        break;
+                    case 'What is your primary occupation';
+                        return 'ท่านมีอาชีพหลักอะไร';
+                        break;
+                    case 'What is your marital status':
+                        return 'สถานภาพสมรสของท่าน?';
+                        break;
+                    case 'Single':
+                        return 'โสด';
+                        break;
+                    case 'Married':
+                        return 'สมรส';
+                        break;
+                    case 'Divorced':
+                        return 'หย่า';
+                        break;
+                    case 'Widowed':
+                        return 'หม้าย';
+                        break;
+                    case 'Other':
+                        return 'อื่นๆ';
+                        break;
+                    case 'Specify':
+                        return 'ระบุ';
+                        break;
+                    case 'How many children do you have':
+                        return 'ท่านมีบุตรกี่คน?';
+                        break;
+                     case 'Have you had any major Illnesses':
+                        return 'ท่านเคยเจ็บป่วยหนัก?';
+                        break;
+                    case 'have':
+                        return 'เคย';
+                        break;
+                    case 'not have':
+                        return 'ไม่เคย';
+                        break;
+                    case 'Have you had any injuries':
+                        return 'ท่านเคยได้รับบาดเจ็บ?';
+                        break;
+                    case 'Have you had any surgeries':
+                        return 'ท่านเคยเข้ารับการผ่าตัด?';
+                        break;
+                    case 'Are you currently taking any medications':
+                        return 'ปัจจุบันท่านทานยาอะไรอยู่หรือไม่?';
+                        break;
+               }
         }
     }
 ?>

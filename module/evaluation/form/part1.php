@@ -9,27 +9,6 @@
     include '../../../function/person.php';
     $lang_id = profile($u_id, 'u_language', $connect);
 ?>
-<div class="row">
-    <div class="col-md-3">
-        <div class="bs-component">
-            <div class="list-group">
-                <a class="list-group-item" href="#" onclick="contentPart('module/evaluation/form/part1.php', '<?= $pes_id ?>', '<?= $u_id ?>')">
-                    <h4 class="list-group-item-heading"><?= language($lang_id, 'part') ?> 1</h4>
-                </a>
-                <a class="list-group-item" href="#" onclick="contentPart('module/evaluation/form/part2.php', '<?= $pes_id ?>', '<?= $u_id ?>')">
-                    <h4 class="list-group-item-heading"><?= language($lang_id, 'part') ?> 2</h4>
-                </a>
-                <a class="list-group-item" href="#" onclick="contentPart('module/evaluation/form/part3.php', '<?= $pes_id ?>', '<?= $u_id ?>')">
-                    <h4 class="list-group-item-heading"><?= language($lang_id, 'part') ?> 3</h4>
-                </a>
-                <a class="list-group-item" href="#">
-                    <h4 class="list-group-item-heading"><?= language($lang_id, 'client photo') ?> </h4>
-                </a>
-            </div>    
-        </div>
-    </div>
-    
-    <div class="col-md-9" id="contentPart">
         <div class="card">
             <div class="card-title-w-btn">
                 <h4 class="title"><a class="btn btn-default icon-btn" href="#"><i class="fa fa-file"></i><?= language($lang_id, 'part') ?> 1</a></h4>
@@ -218,6 +197,3 @@
                 <div id="processing"><i class="fa fa-fw fa-lg fa-check-circle"></i> <?= button_link($lang_id, 'save') ?></div> 
             </button>
         </div>
-    </div>
-</div>
-

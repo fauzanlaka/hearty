@@ -108,3 +108,15 @@
         // run and return the query result resource
         return mysqli_query($con, $sql);
     }
+    function elementSelect($lang_id, $elementName){
+        switch ($lang_id){
+            case 'th':
+                $ename = $elementName.'_th';
+                return $ename;
+                break;
+            case 'en':
+                $ename = $elementName.'_en';
+                return $ename;
+                break;
+        }
+    }

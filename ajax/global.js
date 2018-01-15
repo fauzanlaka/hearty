@@ -6,6 +6,13 @@ function formLoad(path, id, usrid){
     ajaxLoadFrw("GET", URL, data, "contentIn");
     alert(url);
 }
+function contentPart(path, id, usrid){
+    var URL = path + "?id=" + id + "&userid=" + usrid;
+    var data = null;
+    //document.getElementById('contentPart').innerHTML = "Loading...";
+    ajaxLoadFrw("GET", URL, data, "contentPart");
+    alert(url);
+}
 //--------------------------------------Data insert--------------------------------------
 function dataAdd(path, formId){
     var URL = path + "?dummy=" + Math.random();
@@ -37,4 +44,22 @@ function dataCheck(path, formId, msg){
     var data = getFrmData(formId);
     document.getElementById(msg).innerHTML = "<font color='orange'><b>checking...</b></font>";
     ajaxLoadFrw('post', URL, data, '');
+}
+//-------------------------------------open hidden----------------------------------------------
+function openHidden(elementId){
+    var status = document.getElementById(elementId).style.display;
+    switch(status){
+        case 'none':
+            document.getElementById(elementId).style.display = 'block';
+            break;
+        case 'block':
+            document.getElementById(elementId).style.display = 'none';
+            break;
+    }
+}
+function openElement(elementId){
+    document.getElementById(elementId).style.display = 'block';
+}
+function hideElement(elementId){
+    document.getElementById(elementId).style.display = 'none';
 }
