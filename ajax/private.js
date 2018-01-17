@@ -106,3 +106,91 @@ function consentAdd(path, formId){
     var data = data + "&pcValue=" + pcValue;
     ajaxLoadFrw('post', URL, data, 'content');
 }
+function psychosocialAdd(path, formId){
+    var URL = path + "?dummy=" + Math.random();
+    var data = getFrmData(formId);
+    //radio button data pes_marital_status
+    var pes_marital_status = "";
+    var num_pc = psychoSocialForm.elements['pes_marital_status'].length;
+    for(i=0; i<num_pc; i++){
+        var pms = psychoSocialForm.elements['pes_marital_status'][i];
+        if(pms.checked){
+            var pmsValue = pms.value;
+        }
+    }
+    //radio button data pes_major_illneses
+    var pes_major_illneses = "";
+    var num_pc = psychoSocialForm.elements['pes_major_illneses'].length;
+    for(i=0; i<num_pc; i++){
+        var pmi = psychoSocialForm.elements['pes_major_illneses'][i];
+        if(pmi.checked){
+            var pmiValue = pmi.value;
+        }
+    }
+    //radio button data pes_injuries
+    var pes_injuries = "";
+    var num_pc = psychoSocialForm.elements['pes_injuries'].length;
+    for(i=0; i<num_pc; i++){
+        var pi = psychoSocialForm.elements['pes_injuries'][i];
+        if(pi.checked){
+            var piValue = pi.value;
+        }
+    }
+    //radio button data pes_surgeries
+    var pes_surgeries = "";
+    var num_pc = psychoSocialForm.elements['pes_surgeries'].length;
+    for(i=0; i<num_pc; i++){
+        var ps = psychoSocialForm.elements['pes_surgeries'][i];
+        if(ps.checked){
+            var psValue = ps.value;
+        }
+    }
+    //radio button data pes_medication
+    var pes_medication = "";
+    var num_pc = psychoSocialForm.elements['pes_medication'].length;
+    for(i=0; i<num_pc; i++){
+        var pm = psychoSocialForm.elements['pes_medication'][i];
+        if(pm.checked){
+            var pmValue = pm.value;
+        }
+    }
+    //radio button data pes_tobacco
+    var pes_tobacco = "";
+    var num_pc = psychoSocialForm.elements['pes_tobacco'].length;
+    for(i=0; i<num_pc; i++){
+        var pt = psychoSocialForm.elements['pes_tobacco'][i];
+        if(pt.checked){
+            var ptValue = pt.value;
+        }
+    }
+    //radio button data pes_alcohol
+    var pes_alcohol = "";
+    var num_pc = psychoSocialForm.elements['pes_alcohol'].length;
+    for(i=0; i<num_pc; i++){
+        var pa = psychoSocialForm.elements['pes_alcohol'][i];
+        if(pa.checked){
+            var paValue = pa.value;
+        }
+    }
+    //radio button data pes_drug
+    var pes_drug = "";
+    var num_pc = psychoSocialForm.elements['pes_drug'].length;
+    for(i=0; i<num_pc; i++){
+        var pd = psychoSocialForm.elements['pes_drug'][i];
+        if(pd.checked){
+            var pdValue = pd.value;
+        }
+    }
+    //radio button data pes_changing_use
+    var pes_changing_use = "";
+    var num_pc = psychoSocialForm.elements['pes_changing_use'].length;
+    for(i=0; i<num_pc; i++){
+        var pcu = psychoSocialForm.elements['pes_changing_use'][i];
+        if(pcu.checked){
+            var pcuValue = pcu.value;
+        }
+    }
+    var data = data + "&pmsValue=" + pmsValue + "&pmiValue=" + pmiValue + "&piValue=" + piValue + "&psValue=" + psValue + "&pmValue=" + pmValue + "&ptValue=" + ptValue + "&paValue=" + paValue + "&pdValue=" + pdValue + "&pcuValue=" + pcuValue;
+    document.getElementById('processing').innerHTML = 'processing...';
+    ajaxLoadFrw('post', URL, data, 'content');
+}

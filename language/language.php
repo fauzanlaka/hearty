@@ -198,9 +198,68 @@
                     case 'Are you currently taking any medications':
                         return 'Are you currently taking any medications?';
                         break;
-                    
+                    case 'Do you use tobacco':
+                        return 'Do you use tobacco?';
+                        break;
+                    case 'Do you use alcohol':
+                        return 'Do you use alcohol?';
+                        break;
+                    case 'Do you use drugs':
+                        return 'Do you use drugs?';
+                        break;
+                    case 'packs per day':
+                        return 'packs per day';
+                        break;
+                    case 'drinks per day':
+                        return 'drinks per day';
+                        break;
+                    case 'explain':
+                        return 'explain';
+                        break;
+                    case 'have eat':
+                        return 'yes';
+                        break;
+                    case 'not eat':
+                        return 'no';
+                        break;
+                    case 'If yes, has your usage changed (increased or decreased) since the time you were arrested':
+                        return 'if yes, has your usage changed (increased or decreased) since the time you were arrested?';
+                        break;
+                    case 'Now I would like to talk about your life before you were arrested':
+                        return 'now I would like to talk about your life before you were arrested';
+                        break;
+                    case 'How would you describe your family relationships':
+                        return 'how would you describe your family relationships?';
+                        break;
+                    case 'Tell me about your work/education':
+                        return 'tell me about your work/education';
+                        break;
+                    case 'How was your financial situation':
+                        return 'how was your financial situation';
+                        break;
+                    case 'Social activities & relationships':
+                        return 'social activities & relationships';
+                        break;
+                    case 'Tell me about political activities or affiliations':
+                        return 'tell me about political activities or affiliations';
+                        break;
+                    case 'Have you had any past experiences of serious trauma that were NOT related to the current situation in Southern Thailand such as a major accident, childhood abuse, domestic violence, etc.':
+                        return 'have you had any past experiences of serious trauma that were NOT related to the current situation in Southern Thailand such as a major accident, childhood abuse, domestic violence, etc.';
+                        break;
+                    case 'Tell me about your religious practices':
+                        return 'tell me about your religious practices';
+                        break;
+                    case 'Describe your typical daily activities':
+                        return 'describe your typical daily activities';
+                        break;
+                    case 'Tell me about your interests':
+                        return 'tell me about your interests';
+                        break;
+                    case 'What were your plans for the future':
+                        return 'what were your plans for the future';
+                        break;
                 }
-            //ภาษาอังกฤษ
+            //ภาษาไทย
             case 'th':
                 switch ($lang_value){
                     case 'save in language':
@@ -397,7 +456,67 @@
                     case 'Are you currently taking any medications':
                         return 'ปัจจุบันท่านทานยาอะไรอยู่หรือไม่?';
                         break;
-               }
+                    case 'Do you use tobacco':
+                        return 'ท่านสูบบุหรี่?';
+                        break;
+                    case 'Do you use alcohol':
+                        return 'ท่านดื่มสุรา?';
+                        break;
+                    case 'Do you use drugs':
+                        return 'ท่านเสพยา?';
+                        break;
+                    case 'packs per day':
+                        return 'จำนวนซองต่อวัน';
+                        break;
+                    case 'drinks per day':
+                        return 'จำนวนแก้ต่อวัน';
+                        break;
+                    case 'explain':
+                        return 'อธิบาย';
+                        break;
+                    case 'have eat':
+                        return 'ทาน';
+                        break;
+                    case 'not eat':
+                        return 'ไม่ทาน';
+                        break;
+                    case 'If yes, has your usage changed (increased or decreased) since the time you were arrested':
+                        return 'หากใช่ การสูบบุหรี่ ดื่มสุรา เสพยามีการเปลี่ยนแปลง ( เพิ่มขึ้นหรือน้อยลง ) ตั้งแต่ท่านถูกจับกุมหรือไม่? ';
+                        break;
+                    case 'Now I would like to talk about your life before you were arrested':
+                        return 'ตอนนี้ข้าพเจ้าขอถามเกี่ยวกับชีวิตความเป็นอยู่ของท่านก่อนถูกจับกุม';
+                        break;
+                    case 'How would you describe your family relationships':
+                        return 'ความสัมพันธ์ในครอบครัวของท่านเป็นอย่างไร:';
+                        break;
+                    case 'Tell me about your work/education':
+                        return 'กรุณาเล่าถึงการทำงาน / การศึกษา';
+                        break;
+                    case 'How was your financial situation':
+                        return 'สถานะทางการเงินของท่านเป็นอย่างไร';
+                        break;
+                    case 'Social activities & relationships':
+                        return 'กิจกรรมและความสัมพันธ์ทางสังคม';
+                        break;
+                    case 'Tell me about political activities or affiliations':
+                        return 'กรุณาเล่าถึงกิจกรรมทางการเมือง หรือความเกี่ยวข้องทางการเมือง';
+                        break;
+                    case 'Have you had any past experiences of serious trauma that were NOT related to the current situation in Southern Thailand such as a major accident, childhood abuse, domestic violence, etc.':
+                        return 'ท่านเคยประสบเหตุการณ์รุนแรงในอดีต อันไม่เกี่ยวข้องกับสถานการณ์ปัจจุบันในภาคใต้ของประเทศไทยหรือไม่ (เช่น อุบัติเหตครั้งใหญ่ การถูกทำร้ายในวัยเด็ก ความรุนแรงในครอบครัว เป็นต้น)';
+                        break;
+                    case 'Tell me about your religious practices':
+                        return 'กรุณาเล่าถึงการปฏิบัติกิจทางศาสนาของท่าน';
+                        break;
+                    case 'Describe your typical daily activities':
+                        return 'กรุณาเล่าถึงกิจวัตรประจำวัน';
+                        break;
+                    case 'Tell me about your interests':
+                        return 'เรื่องที่ท่านมีความสนใจ';
+                        break;
+                    case 'What were your plans for the future':
+                        return 'ท่านวางแผนอนาคตไว้อย่างไร';
+                        break;
+                }
         }
     }
 ?>
