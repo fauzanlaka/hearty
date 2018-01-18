@@ -154,7 +154,7 @@
                         return 'How many years did you attend school';
                         break;
                     case 'What is your primary occupation';
-                        return 'how many years did you attend school';
+                        return 'what is your primary occupation';
                         break;
                     case 'What is your marital status':
                         return 'what is your marital status?';

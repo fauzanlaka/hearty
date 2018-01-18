@@ -85,6 +85,153 @@
             case 'pes_permission_conduct':
                 return str_replace("\'", "&#39;", $result["pes_permission_conduct"]);
                 break;
+            case 'pes_attend_school':
+                return str_replace("\'", "&#39;", $result["pes_attend_school"]);
+                break;
+            case 'pes_primary_occupation_th':
+                return str_replace("\'", "&#39;", $result["pes_primary_occupation_th"]);
+                break;
+            case 'pes_primary_occupation_en':
+                return str_replace("\'", "&#39;", $result["pes_primary_occupation_en"]);
+                break;
+            case 'pes_marital_status':
+                return str_replace("\'", "&#39;", $result["pes_marital_status"]);
+                break;
+            case 'pes_marital_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_marital_specify_th"]);
+                break;
+            case 'pes_marital_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_marital_specify_en"]);
+                break;
+            case 'pes_children':
+                return str_replace("\'", "&#39;", $result["pes_children"]);
+                break;
+            case 'pes_major_illneses':
+                return str_replace("\'", "&#39;", $result["pes_major_illneses"]);
+                break;
+            case 'pes_major_illnesses_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_major_illnesses_specify_th"]);
+                break;
+            case 'pes_major_illnesses_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_major_illnesses_specify_en"]);
+                break;
+            case 'pes_injuries':
+                return str_replace("\'", "&#39;", $result["pes_injuries"]);
+                break;
+            case 'pes_injuries_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_injuries_specify_th"]);
+                break;
+            case 'pes_injuries_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_injuries_specify_en"]);
+                break;
+            case 'pes_surgeries':
+                return str_replace("\'", "&#39;", $result["pes_surgeries"]);
+                break;
+            case 'pes_surgeries_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_surgeries_specify_th"]);
+                break;
+            case 'pes_surgeries_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_surgeries_specify_en"]);
+                break;
+            case 'pes_medication':
+                return str_replace("\'", "&#39;", $result["pes_medication"]);
+                break;
+            case 'pes_medication_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_medication_specify_th"]);
+                break;
+            case 'pes_medication_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_medication_specify_en"]);
+                break;
+            case 'pes_tobacco':
+                return str_replace("\'", "&#39;", $result["pes_tobacco"]);
+                break;
+            case 'pes_tobacco_specify':
+                return str_replace("\'", "&#39;", $result["pes_tobacco_specify"]);
+                break;
+            case 'pes_alcohol':
+                return str_replace("\'", "&#39;", $result["pes_tobacco"]);
+                break;
+            case 'pes_alcohol_specify':
+                return str_replace("\'", "&#39;", $result["pes_alcohol_specify"]);
+                break;
+            case 'pes_drug':
+                return str_replace("\'", "&#39;", $result["pes_drug"]);
+                break;
+            case 'pes_drug_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_drug_specify_th"]);
+                break;
+            case 'pes_drug_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_drug_specify_en"]);
+                break;
+            case 'pes_changing_use':
+                return str_replace("\'", "&#39;", $result["pes_changing_use"]);
+                break;
+            case 'pes_changing_use_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_changing_use_specify_th"]);
+                break;
+            case 'pes_changing_use_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_changing_use_specify_en"]);
+                break;
+            case 'pes_family_relationship_th':
+                return str_replace("\'", "&#39;", $result["pes_family_relationship_th"]);
+                break;
+            case 'pes_family_relationship_en':
+                return str_replace("\'", "&#39;", $result["pes_family_relationship_en"]);
+                break;
+            case 'pes_work_or_education_th':
+                return str_replace("\'", "&#39;", $result["pes_work_or_education_th"]);
+                break;
+            case 'pes_work_or_education_en':
+                return str_replace("\'", "&#39;", $result["pes_work_or_education_en"]);
+                break;
+            case 'pes_financial_situation_th':
+                return str_replace("\'", "&#39;", $result["pes_financial_situation_th"]);
+                break;
+            case 'pes_financial_situation_en':
+                return str_replace("\'", "&#39;", $result["pes_financial_situation_en"]);
+                break;
+            case 'pes_social_activity_th':
+                return str_replace("\'", "&#39;", $result["pes_social_activity_th"]);
+                break;
+            case 'pes_social_activity_en':
+                return str_replace("\'", "&#39;", $result["pes_social_activity_en"]);
+                break;
+            case 'pes_political_activity_th':
+                return str_replace("\'", "&#39;", $result["pes_political_activity_th"]);
+                break;
+            case 'pes_political_activity_en':
+                return str_replace("\'", "&#39;", $result["pes_political_activity_en"]);
+                break;
+            case 'pes_exp_of_serious_th':
+                return str_replace("\'", "&#39;", $result["pes_exp_of_serious_th"]);
+                break;
+            case 'pes_exp_of_serious_en':
+                return str_replace("\'", "&#39;", $result["pes_exp_of_serious_en"]);
+                break;
+            case 'pes_religios_practice_th':
+                return str_replace("\'", "&#39;", $result["pes_religios_practice_th"]);
+                break;
+            case 'pes_religios_practice_en':
+                return str_replace("\'", "&#39;", $result["pes_religios_practice_en"]);
+                break;
+            case 'pes_daily_activity_th':
+                return str_replace("\'", "&#39;", $result["pes_daily_activity_th"]);
+                break;
+            case 'pes_daily_activity_en':
+                return str_replace("\'", "&#39;", $result["pes_daily_activity_en"]);
+                break;
+            case 'pes_interest_th':
+                return str_replace("\'", "&#39;", $result["pes_interest_th"]);
+                break;
+            case 'pes_interest_en':
+                return str_replace("\'", "&#39;", $result["pes_interest_en"]);
+                break;
+            case 'pes_future_plan_th':
+                return str_replace("\'", "&#39;", $result["pes_future_plan_th"]);
+                break;
+            case 'pes_future_plan_en':
+                return str_replace("\'", "&#39;", $result["pes_future_plan_en"]);
+                break;
         }
     }
 ?>
