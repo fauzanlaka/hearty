@@ -258,6 +258,31 @@
                     case 'What were your plans for the future':
                         return 'what were your plans for the future';
                         break;
+                    //-----------------------part4--------------------
+                    case 'ALLEGATION OF TORTURE/ILL TREATMENT':
+                        return 'allegation of torture/ill treatment';
+                        break;
+                    case 'Before being arrested did you experience any problems related to the current situation in Southern Thailand':
+                        return 'Before being arrested did you experience any problems related to the current situation in Southern Thailand?';
+                        break;
+                    case 'explain':
+                        return 'explain';
+                        break;
+                    case 'Have you been harassed or discriminated against because of your ethnicity or religion':
+                        return 'Have you been harassed or discriminated against because of your ethnicity or religion?';
+                        break;
+                    case 'Have you been deprived of basic necessities such as food, water, medicine, or medical care':
+                        return 'have you been deprived of basic necessities such as food, water, medicine, or medical care?';
+                        break;
+                    case 'Have you been isolated or separated, from family or friends (not including detention)':
+                        return 'have you been isolated or separated, from family or friends (not including detention)?';
+                        break;
+                    case 'Have you been physically harmed':
+                        return 'have you been physically harmed?';
+                        break;
+                    case 'Sexually harassed, humiliated, or assaulted':
+                        return 'have you been sexually harassed, humiliated, or assaulted?';
+                        break;
                 }
             //ภาษาไทย
             case 'th':
@@ -515,6 +540,31 @@
                         break;
                     case 'What were your plans for the future':
                         return 'ท่านวางแผนอนาคตไว้อย่างไร';
+                        break;
+                    //------------------------part 4 ----------------------------
+                    case 'ALLEGATION OF TORTURE/ILL TREATMENT':
+                        return 'การกล่าวหาเรื่องทรมานและการปฏิบัติที่โหดร้าย';
+                        break;
+                    case 'Before being arrested did you experience any problems related to the current situation in Southern Thailand':
+                        return 'ก่อนถูกจับกุม ท่านเคยประสบปัญหาใดๆที่เกี่ยวข้องสถานการณ์ปัจจุบันในภาคใต้ของประเทศไทยหรือไม่?';
+                        break;
+                    case 'explain':
+                        return 'อธิบาย';
+                        break;
+                    case 'Have you been harassed or discriminated against because of your ethnicity or religion':
+                        return 'ท่านเคยถูกคุกคามหรือเลือกปฏิบัติด้วยเพตุผลทางเชื้อชาติหรือศาสนา?';
+                        break;
+                    case 'Have you been deprived of basic necessities such as food, water, medicine, or medical care':
+                        return 'ท่านเคยถูกตัดสิ่งจำเป็นขั้นพื้นฐาน เช่น อาหาร น้ำ ยา หรือการรักษาพยาบาล?';
+                        break;
+                    case 'Have you been isolated or separated, from family or friends (not including detention)':
+                        return 'ท่านเคยถูกกีดกันหรือพลัดพรากจากครอบครัวหรือเพื่อน (ไม่รวมการกักขัง)?';
+                        break;
+                    case 'Have you been physically harmed':
+                        return 'ท่านเคยถูกทำร้ายร่างกาย?';
+                        break;
+                    case 'Sexually harassed, humiliated, or assaulted':
+                        return 'ท่านเคยถูกคุกคาม ทำให้อับอายหรือทำร้ายทางเพศ?';
                         break;
                 }
         }

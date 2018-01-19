@@ -27,7 +27,7 @@
             'pes_drug_specify_th' => addslashes($_POST['pes_drug_specify_th']),
             'pes_changing_use' => addslashes($_POST['pcuValue']),
             'pes_changing_use_specify_th' => addslashes($_POST['pes_changing_use_specify_th']),
-             'pes_family_relationship_th' => addslashes($_POST['pes_family_relationship_th']),
+            'pes_family_relationship_th' => addslashes($_POST['pes_family_relationship_th']),
             'pes_work_or_education_th' => addslashes($_POST['pes_work_or_education_th']),
             'pes_financial_situation_th' => addslashes($_POST['pes_financial_situation_th']),
             'pes_social_activity_th' => addslashes($_POST['pes_social_activity_th']),

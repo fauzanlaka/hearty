@@ -194,3 +194,64 @@ function psychosocialAdd(path, formId){
     document.getElementById('processing').innerHTML = 'processing...';
     ajaxLoadFrw('post', URL, data, 'content');
 }
+function allegationAdd(path, formId){
+    var URL = path + "?dummy=" + Math.random();
+    var data = getFrmData(formId);
+    //radio button data pes_ploblem_before_arrested
+    var pes_ploblem_before_arrested = "";
+    var num_pc = allegationForm.elements['pes_ploblem_before_arrested'].length;
+    for(i=0; i<num_pc; i++){
+        var ppba = allegationForm.elements['pes_ploblem_before_arrested'][i];
+        if(ppba.checked){
+            var ppbaValue = ppba.value;
+        }
+    }
+    //radio button data pes_ploblem_before_arrested
+    var pes_discriminated = "";
+    var num_pc = allegationForm.elements['pes_discriminated'].length;
+    for(i=0; i<num_pc; i++){
+        var pd = allegationForm.elements['pes_discriminated'][i];
+        if(pd.checked){
+            var pdValue = pd.value;
+        }
+    }
+    //radio button data pes_deprived_necessities
+    var pes_discriminated = "";
+    var num_pc = allegationForm.elements['pes_deprived_necessities'].length;
+    for(i=0; i<num_pc; i++){
+        var pdn = allegationForm.elements['pes_deprived_necessities'][i];
+        if(pdn.checked){
+            var pdnValue = pdn.value;
+        }
+    }
+    //radio button data pes_separated_from_family
+    var pes_separated_from_family = "";
+    var num_pc = allegationForm.elements['pes_separated_from_family'].length;
+    for(i=0; i<num_pc; i++){
+        var psff = allegationForm.elements['pes_separated_from_family'][i];
+        if(psff.checked){
+            var psffValue = psff.value;
+        }
+    }
+    //radio button data pes_physically_harmed
+    var pes_separated_from_family = "";
+    var num_pc = allegationForm.elements['pes_physically_harmed'].length;
+    for(i=0; i<num_pc; i++){
+        var pph = allegationForm.elements['pes_physically_harmed'][i];
+        if(pph.checked){
+            var pphValue = pph.value;
+        }
+    }
+    //radio button data pes_sexually_harassed
+    var pes_separated_from_family = "";
+    var num_pc = allegationForm.elements['pes_sexually_harassed'].length;
+    for(i=0; i<num_pc; i++){
+        var psh = allegationForm.elements['pes_sexually_harassed'][i];
+        if(psh.checked){
+            var pshValue = psh.value;
+        }
+    }
+    var data = data + "&ppbaValue=" + ppbaValue + "&pdValue=" + pdValue + "&pdnValue=" + pdnValue + "&psffValue=" + psffValue + "&pphValue=" + pphValue + "&pshValue=" + pshValue;
+    document.getElementById('processing').innerHTML = 'processing...';
+    ajaxLoadFrw('post', URL, data, 'content');
+}

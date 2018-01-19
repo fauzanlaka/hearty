@@ -22,6 +22,9 @@
                 <a class="list-group-item" href="#" onclick="contentPart('module/evaluation/form/part3.php', '<?= $pes_id ?>', '<?= $u_id ?>')">
                     <h4 class="list-group-item-heading"><?= language($lang_id, 'part') ?> 3</h4>
                 </a>
+                <a class="list-group-item" href="#" onclick="contentPart('module/evaluation/form/part4.php', '<?= $pes_id ?>', '<?= $u_id ?>')">
+                    <h4 class="list-group-item-heading"><?= language($lang_id, 'part') ?> 4</h4>
+                </a>
                 <a class="list-group-item" href="#">
                     <h4 class="list-group-item-heading"><?= language($lang_id, 'client photo') ?> </h4>
                 </a>

@@ -232,6 +232,57 @@
             case 'pes_future_plan_en':
                 return str_replace("\'", "&#39;", $result["pes_future_plan_en"]);
                 break;
+            case 'pes_ploblem_before_arrested':
+                return str_replace("\'", "&#39;", $result["pes_ploblem_before_arrested"]);
+                break;
+            case 'pes_ploblem_before_arrested_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_ploblem_before_arrested_specify_th"]);
+                break;
+            case 'pes_ploblem_before_arrested_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_ploblem_before_arrested_specify_en"]);
+                break;
+            case 'pes_discriminated':
+                return str_replace("\'", "&#39;", $result["pes_discriminated"]);
+                break;
+            case 'pes_discriminated_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_discriminated_specify_th"]);
+                break;
+            case 'pes_deprived_necessities':
+                return str_replace("\'", "&#39;", $result["pes_deprived_necessities"]);
+                break;
+            case 'pes_deprived_necessities_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_deprived_necessities_specify_th"]);
+                break;
+            case 'pes_deprived_necessities_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_deprived_necessities_specify_en"]);
+                break;
+            case 'pes_separated_from_family':
+                return str_replace("\'", "&#39;", $result["pes_separated_from_family"]);
+                break;
+            case 'pes_separated_from_family_th':
+                return str_replace("\'", "&#39;", $result["pes_separated_from_family_th"]);
+                break;
+            case 'pes_separated_from_family_en':
+                return str_replace("\'", "&#39;", $result["pes_separated_from_family_en"]);
+                break;
+            case 'pes_physically_harmed':
+                return str_replace("\'", "&#39;", $result["pes_physically_harmed"]);
+                break;
+            case 'pes_physically_harmed_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_physically_harmed_specify_th"]);
+                break;
+            case 'pes_physically_harmed_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_physically_harmed_specify_en"]);
+                break;
+            case 'pes_sexually_harassed':
+                return str_replace("\'", "&#39;", $result["pes_sexually_harassed"]);
+                break;
+            case 'pes_sexually_harassed_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_sexually_harassed_specify_th"]);
+                break;
+            case 'pes_sexually_harassed_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_sexually_harassed_specify_en"]);
+                break;
         }
     }
 ?>
