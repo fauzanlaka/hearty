@@ -173,6 +173,58 @@
                 <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_sexually_harassed_specify') ?>" id="<?= elementSelect($lang_id, 'pes_sexually_harassed_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_sexually_harassed_specify'), $connect) ?></textarea>
             </div>
         </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'Physically searched or had your home searched') ?></label>
+                <div class="radio">
+                    <?php
+                        $pes_physical_home_search = personInfo($pes_id, 'pes_physical_home_search', $connect);
+                        if($pes_physical_home_search=='yes'){
+                            $hidden7 = "block";
+                        }else{
+                            $hidden7 = "none";
+                        }
+                    ?>
+                    <label>
+                        <input type="radio" name="pes_physical_home_search" value="yes" onclick="openElement('hidden7')" <?php if($pes_physical_home_search=='yes'){echo "checked='checked'";} ?>><?= language($lang_id, 'have') ?>
+                    </label>
+                        &nbsp;&nbsp;
+                    <label>
+                        <input type="radio" name="pes_physical_home_search" value="no" onclick="hideElement('hidden7')" <?php if($pes_physical_home_search=='no'){echo "checked='checked'";} ?>><?= language($lang_id, 'not have') ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6" id="hidden7" style="display: <?= $hidden7 ?>">
+                <label><?= language($lang_id, 'explain') ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_physical_home_search_specify') ?>" id="<?= elementSelect($lang_id, 'pes_physical_home_search_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_physical_home_search_specify'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'Property destroyed or confiscated') ?></label>
+                <div class="radio">
+                    <?php
+                        $pes_property_destroyed = personInfo($pes_id, 'pes_property_destroyed', $connect);
+                        if($pes_property_destroyed=='yes'){
+                            $hidden8 = "block";
+                        }else{
+                            $hidden8 = "none";
+                        }
+                    ?>
+                    <label>
+                        <input type="radio" name="pes_property_destroyed" value="yes" onclick="openElement('hidden8')" <?php if($pes_property_destroyed=='yes'){echo "checked='checked'";} ?>><?= language($lang_id, 'have') ?>
+                    </label>
+                        &nbsp;&nbsp;
+                    <label>
+                        <input type="radio" name="pes_property_destroyed" value="no" onclick="hideElement('hidden8')" <?php if($pes_property_destroyed=='no'){echo "checked='checked'";} ?>><?= language($lang_id, 'not have') ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6" id="hidden8" style="display: <?= $hidden8 ?>">
+                <label><?= language($lang_id, 'explain') ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_property_destroyed_specify') ?>" id="<?= elementSelect($lang_id, 'pes_property_destroyed_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_property_destroyed_specify'), $connect) ?></textarea>
+            </div>
+        </div>
         <input type="hidden" name="operator" value="<?= $u_id ?>">
         <input type="hidden" name="pes_id" value="<?= $pes_id ?>">
         <input type="hidden" name="lang_id" value="<?= $lang_id ?>">

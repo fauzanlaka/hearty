@@ -283,6 +283,12 @@
                     case 'Sexually harassed, humiliated, or assaulted':
                         return 'have you been sexually harassed, humiliated, or assaulted?';
                         break;
+                    case 'Physically searched or had your home searched':
+                        return 'Have you been physically searched or had your home searched';
+                        break;
+                    case 'Property destroyed or confiscated':
+                        return 'have you been property destroyed or confiscated';
+                        break;
                 }
             //ภาษาไทย
             case 'th':
@@ -565,6 +571,12 @@
                         break;
                     case 'Sexually harassed, humiliated, or assaulted':
                         return 'ท่านเคยถูกคุกคาม ทำให้อับอายหรือทำร้ายทางเพศ?';
+                        break;
+                    case 'Physically searched or had your home searched':
+                        return 'ท่านเคยถูกค้นร่างกายหรือตรวจค้นบ้าน?';
+                        break;
+                    case 'Property destroyed or confiscated':
+                        return 'ท่านเคยถูกทำลายหรือยึดทรัพย์สิน?';
                         break;
                 }
         }

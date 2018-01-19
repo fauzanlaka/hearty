@@ -251,7 +251,25 @@ function allegationAdd(path, formId){
             var pshValue = psh.value;
         }
     }
-    var data = data + "&ppbaValue=" + ppbaValue + "&pdValue=" + pdValue + "&pdnValue=" + pdnValue + "&psffValue=" + psffValue + "&pphValue=" + pphValue + "&pshValue=" + pshValue;
+    //radio button data pes_physical_home_search
+    var pes_physical_home_search = "";
+    var num_pc = allegationForm.elements['pes_physical_home_search'].length;
+    for(i=0; i<num_pc; i++){
+        var pphs = allegationForm.elements['pes_physical_home_search'][i];
+        if(pphs.checked){
+            var pphsValue = pphs.value;
+        }
+    }
+    //radio button data pes_property_destroyed
+    var pes_property_destroyed = "";
+    var num_pc = allegationForm.elements['pes_property_destroyed'].length;
+    for(i=0; i<num_pc; i++){
+        var ppd = allegationForm.elements['pes_property_destroyed'][i];
+        if(ppd.checked){
+            var ppdValue = ppd.value;
+        }
+    }
+    var data = data + "&ppbaValue=" + ppbaValue + "&pdValue=" + pdValue + "&pdnValue=" + pdnValue + "&psffValue=" + psffValue + "&pphValue=" + pphValue + "&pshValue=" + pshValue + '&pphsValue=' + pphsValue + "&ppdValue=" + ppdValue;
     document.getElementById('processing').innerHTML = 'processing...';
     ajaxLoadFrw('post', URL, data, 'content');
 }

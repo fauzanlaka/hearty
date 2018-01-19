@@ -283,6 +283,24 @@
             case 'pes_sexually_harassed_specify_en':
                 return str_replace("\'", "&#39;", $result["pes_sexually_harassed_specify_en"]);
                 break;
+            case 'pes_physical_home_search':
+                return str_replace("\'", "&#39;", $result["pes_physical_home_search"]);
+                break;
+            case 'pes_physical_home_search_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_physical_home_search_specify_th"]);
+                break;
+            case 'pes_physical_home_search_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_physical_home_search_specify_en"]);
+                break;
+            case 'pes_property_destroyed':
+                return str_replace("\'", "&#39;", $result["pes_property_destroyed"]);
+                break;
+            case 'pes_property_destroyed_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_property_destroyed_specify_th"]);
+                break;
+            case 'pes_property_destroyed_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_property_destroyed_specify_en"]);
+                break;
         }
     }
 ?>

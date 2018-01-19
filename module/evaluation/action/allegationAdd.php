@@ -17,7 +17,11 @@
             'pes_physically_harmed' => addslashes($_POST['pphValue']),
             'pes_physically_harmed_specify_th' => addslashes($_POST['pes_physically_harmed_specify_th']),
             'pes_sexually_harassed' => addslashes($_POST['pshValue']),
-            'pes_sexually_harassed_specify_th' => addslashes($_POST['pes_sexually_harassed_specify_th'])
+            'pes_sexually_harassed_specify_th' => addslashes($_POST['pes_sexually_harassed_specify_th']),
+            'pes_physical_home_search' => addslashes($_POST['pphsValue']),
+            'pes_physical_home_search_specify_th' => addslashes($_POST['pes_physical_home_search_specify_th']),
+            'pes_property_destroyed' => addslashes($_POST['ppdValue']),
+            'pes_property_destroyed_specify_th' => addslashes($_POST['pes_property_destroyed_specify_th'])
         );
     }else{
         $form_data = array(
@@ -32,7 +36,11 @@
             'pes_physically_harmed' => addslashes($_POST['pphValue']),
             'pes_physically_harmed_specify_en' => addslashes($_POST['pes_physically_harmed_specify_en']),
             'pes_sexually_harassed' => addslashes($_POST['pshValue']),
-            'pes_sexually_harassed_specify_en' => addslashes($_POST['pes_sexually_harassed_specify_en'])
+            'pes_sexually_harassed_specify_en' => addslashes($_POST['pes_sexually_harassed_specify_en']),
+            'pes_physical_home_search' => addslashes($_POST['pphsValue']),
+            'pes_physical_home_search_specify_en' => addslashes($_POST['pes_physical_home_search_specify_en']),
+            'pes_property_destroyed' => addslashes($_POST['ppdValue']),
+            'pes_property_destroyed_specify_en' => addslashes($_POST['pes_property_destroyed_specify_en'])
         );
     }
     //echo "alert('$pes_id');";
