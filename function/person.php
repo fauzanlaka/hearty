@@ -301,6 +301,24 @@
             case 'pes_property_destroyed_specify_en':
                 return str_replace("\'", "&#39;", $result["pes_property_destroyed_specify_en"]);
                 break;
+            case 'pes_arrested_or_imprisoned':
+                return str_replace("\'", "&#39;", $result["pes_arrested_or_imprisoned"]);
+                break;
+            case 'pes_arrested_or_imprisoned_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_arrested_or_imprisoned_specify_th"]);
+                break;
+            case 'pes_arrested_or_imprisoned_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_arrested_or_imprisoned_specify_en"]);
+                break;
+            case 'pes_forced_harm_family':
+                return str_replace("\'", "&#39;", $result["pes_forced_harm_family"]);
+                break;
+            case 'pes_forced_harm_family_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_forced_harm_family_specify_th"]);
+                break;
+            case 'pes_forced_harm_family_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_forced_harm_family_specify_en"]);
+                break;
         }
     }
 ?>

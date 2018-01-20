@@ -269,7 +269,16 @@ function allegationAdd(path, formId){
             var ppdValue = ppd.value;
         }
     }
-    var data = data + "&ppbaValue=" + ppbaValue + "&pdValue=" + pdValue + "&pdnValue=" + pdnValue + "&psffValue=" + psffValue + "&pphValue=" + pphValue + "&pshValue=" + pshValue + '&pphsValue=' + pphsValue + "&ppdValue=" + ppdValue;
+    //radio button data pes_arrested_or_imprisoned
+    var pes_arrested_or_imprisoned = "";
+    var num_pc = allegationForm.elements['pes_arrested_or_imprisoned'].length;
+    for(i=0; i<num_pc; i++){
+        var pai = allegationForm.elements['pes_arrested_or_imprisoned'][i];
+        if(pai.checked){
+            var paiValue = pai.value;
+        }
+    }
+    var data = data + "&ppbaValue=" + ppbaValue + "&pdValue=" + pdValue + "&pdnValue=" + pdnValue + "&psffValue=" + psffValue + "&pphValue=" + pphValue + "&pshValue=" + pshValue + '&pphsValue=' + pphsValue + "&ppdValue=" + ppdValue + "&paiValue=" + paiValue;
     document.getElementById('processing').innerHTML = 'processing...';
     ajaxLoadFrw('post', URL, data, 'content');
 }

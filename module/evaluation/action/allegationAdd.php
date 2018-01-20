@@ -21,7 +21,9 @@
             'pes_physical_home_search' => addslashes($_POST['pphsValue']),
             'pes_physical_home_search_specify_th' => addslashes($_POST['pes_physical_home_search_specify_th']),
             'pes_property_destroyed' => addslashes($_POST['ppdValue']),
-            'pes_property_destroyed_specify_th' => addslashes($_POST['pes_property_destroyed_specify_th'])
+            'pes_property_destroyed_specify_th' => addslashes($_POST['pes_property_destroyed_specify_th']),
+            'pes_arrested_or_imprisoned' => addslashes($_POST['paiValue']),
+            'pes_arrested_or_imprisoned_specify_th' => addslashes($_POST['pes_arrested_or_imprisoned_specify_th'])
         );
     }else{
         $form_data = array(
@@ -40,7 +42,9 @@
             'pes_physical_home_search' => addslashes($_POST['pphsValue']),
             'pes_physical_home_search_specify_en' => addslashes($_POST['pes_physical_home_search_specify_en']),
             'pes_property_destroyed' => addslashes($_POST['ppdValue']),
-            'pes_property_destroyed_specify_en' => addslashes($_POST['pes_property_destroyed_specify_en'])
+            'pes_property_destroyed_specify_en' => addslashes($_POST['pes_property_destroyed_specify_en']),
+            'pes_arrested_or_imprisoned' => addslashes($_POST['paiValue']),
+            'pes_arrested_or_imprisoned_specify_en' => addslashes($_POST['pes_arrested_or_imprisoned_specify_en'])
         );
     }
     //echo "alert('$pes_id');";

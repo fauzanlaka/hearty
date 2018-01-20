@@ -225,6 +225,58 @@
                 <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_property_destroyed_specify') ?>" id="<?= elementSelect($lang_id, 'pes_property_destroyed_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_property_destroyed_specify'), $connect) ?></textarea>
             </div>
         </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'Arrested, detained, or imprisoned') ?></label>
+                <div class="radio">
+                    <?php
+                        $pes_arrested_or_imprisoned = personInfo($pes_id, 'pes_arrested_or_imprisoned', $connect);
+                        if($pes_arrested_or_imprisoned=='yes'){
+                            $hidden9 = "block";
+                        }else{
+                            $hidden9 = "none";
+                        }
+                    ?>
+                    <label>
+                        <input type="radio" name="pes_arrested_or_imprisoned" value="yes" onclick="openElement('hidden9')" <?php if($pes_arrested_or_imprisoned=='yes'){echo "checked='checked'";} ?>><?= language($lang_id, 'have') ?>
+                    </label>
+                        &nbsp;&nbsp;
+                    <label>
+                        <input type="radio" name="pes_arrested_or_imprisoned" value="no" onclick="hideElement('hidden9')" <?php if($pes_arrested_or_imprisoned=='no'){echo "checked='checked'";} ?>><?= language($lang_id, 'not have') ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6" id="hidden9" style="display: <?= $hidden9 ?>">
+                <label><?= language($lang_id, 'explain') ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_arrested_or_imprisoned_specify') ?>" id="<?= elementSelect($lang_id, 'pes_arrested_or_imprisoned_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_arrested_or_imprisoned_specify'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'Forced to harm family members or friends') ?></label>
+                <div class="radio">
+                    <?php
+                        $pes_forced_harm_family = personInfo($pes_id, 'pes_forced_harm_family', $connect);
+                        if($pes_forced_harm_family=='yes'){
+                            $hidden10 = "block";
+                        }else{
+                            $hidden10 = "none";
+                        }
+                    ?>
+                    <label>
+                        <input type="radio" name="pes_forced_harm_family" value="yes" onclick="openElement('hidden10')" <?php if($pes_forced_harm_family=='yes'){echo "checked='checked'";} ?>><?= language($lang_id, 'have') ?>
+                    </label>
+                        &nbsp;&nbsp;
+                    <label>
+                        <input type="radio" name="pes_forced_harm_family" value="no" onclick="hideElement('hidden10')" <?php if($pes_forced_harm_family=='no'){echo "checked='checked'";} ?>><?= language($lang_id, 'not have') ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6" id="hidden10" style="display: none">
+                <label><?= language($lang_id, 'explain') ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_forced_harm_family_specify') ?>" id="<?= elementSelect($lang_id, 'pes_forced_harm_family_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_forced_harm_family_specify'), $connect) ?></textarea>
+            </div>
+        </div>
         <input type="hidden" name="operator" value="<?= $u_id ?>">
         <input type="hidden" name="pes_id" value="<?= $pes_id ?>">
         <input type="hidden" name="lang_id" value="<?= $lang_id ?>">

@@ -284,10 +284,16 @@
                         return 'have you been sexually harassed, humiliated, or assaulted?';
                         break;
                     case 'Physically searched or had your home searched':
-                        return 'Have you been physically searched or had your home searched';
+                        return 'have you been physically searched or had your home searched';
                         break;
                     case 'Property destroyed or confiscated':
                         return 'have you been property destroyed or confiscated';
+                        break;
+                    case 'Arrested, detained, or imprisoned':
+                        return 'have you been arrested, detained, or imprisoned?';
+                        break;
+                    case 'Forced to harm family members or friends':
+                        return 'have you been forced to harm family members or friends?';
                         break;
                 }
             //ภาษาไทย
@@ -577,6 +583,12 @@
                         break;
                     case 'Property destroyed or confiscated':
                         return 'ท่านเคยถูกทำลายหรือยึดทรัพย์สิน?';
+                        break;
+                    case 'Arrested, detained, or imprisoned':
+                        return 'ท่านเคยถูกจับกุม กักขังหรือจำคุก?';
+                        break;
+                    case 'Forced to harm family members or friends':
+                        return 'ท่านเคยถูกบังคับให้ทำร้ายสมาชิกในครอบครัวหรือเพื่อน?';
                         break;
                 }
         }
