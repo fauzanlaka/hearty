@@ -33,6 +33,7 @@
         'placed in a small space' => 'placed in a small space (e.g., a box or under a chair)',
         'forced to stand' => 'forced to stand',
         'lie, or kneel in an uncomfortable position' => 'lie, or kneel in an uncomfortable position',
-        
+        'can' => 'yes',
+        'can not' => 'no'
     );
 ?>
