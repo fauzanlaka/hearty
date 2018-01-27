@@ -50,8 +50,23 @@
             'pes_turture_duration' => addslashes($_POST['pes_turture_duration']),
             'pes_turture_restraint_th' => addslashes($_POST['pes_turture_restraint_th']),
             'pes_injury_location_th' => addslashes($_POST['pes_injury_location_th']),
-            'pes_injury_observation_th' => addslashes($_POST['pes_injury_observation_th'])
-            
+            'pes_injury_observation_th' => addslashes($_POST['pes_injury_observation_th']),
+            'pes_bruises' => addslashes($_POST['pes_bruises']),
+            'pes_bleeding' => addslashes($_POST['pes_bleeding']),
+            'pes_loss_of_consciousness' => addslashes($_POST['pes_loss_of_consciousness']),
+            'pes_numbness' => addslashes($_POST['pes_numbness']),
+            'pes_weakness' => addslashes($_POST['pes_weakness']),
+            'pes_head_trauma_other' => addslashes($_POST['pes_head_trauma_other']),
+            'pes_head_trauma_explain_th' => addslashes($_POST['pes_head_trauma_explain_th']),
+            'pes_suspension' => addslashes($_POST['pes_bruises']),
+            'pes_stretching_limbs_apart' => addslashes($_POST['pes_stretching_limbs_apart']),
+            'pes_prolonged_constraint_of_movement' => addslashes($_POST['pes_prolonged_constraint_of_movement']),
+            'pes_forced_positioning' => addslashes($_POST['pes_forced_positioning']),
+            'pes_being_chained_or_tied' => addslashes($_POST['pes_being_chained_or_tied']),
+            'pes_placed_in_space' => addslashes($_POST['pes_placed_in_space']),
+            'pes_forced_to_stand' => addslashes($_POST['pes_forced_to_stand']),
+            'pes_lie_or_kneel_uncomfortable' => addslashes($_POST['pes_lie_or_kneel_uncomfortable']),
+            'pes_positional_torture_explain_th' => addslashes($_POST['pes_positional_torture_explain_th'])
         );
     }else{
         $form_data = array(
@@ -99,7 +114,23 @@
             'pes_turture_duration' => addslashes($_POST['pes_turture_duration']),
             'pes_turture_restraint_en' => addslashes($_POST['pes_turture_restraint_en']),
             'pes_injury_location_en' => addslashes($_POST['pes_injury_location_en']),
-            'pes_injury_observation_en' => addslashes($_POST['pes_injury_observation_en'])
+            'pes_injury_observation_en' => addslashes($_POST['pes_injury_observation_en']),
+            'pes_bruises' => addslashes($_POST['pes_bruises']),
+            'pes_bleeding' => addslashes($_POST['pes_bleeding']),
+            'pes_loss_of_consciousness' => addslashes($_POST['pes_loss_of_consciousness']),
+            'pes_numbness' => addslashes($_POST['pes_numbness']),
+            'pes_weakness' => addslashes($_POST['pes_weakness']),
+            'pes_head_trauma_other' => addslashes($_POST['pes_head_trauma_other']),
+            'pes_head_trauma_explain_en' => addslashes($_POST['pes_head_trauma_explain_en']),
+            'pes_bruises' => addslashes($_POST['pes_bruises']),
+            'pes_stretching_limbs_apart' => addslashes($_POST['pes_stretching_limbs_apart']),
+            'pes_prolonged_constraint_of_movement' => addslashes($_POST['pes_prolonged_constraint_of_movement']),
+            'pes_forced_positioning' => addslashes($_POST['pes_forced_positioning']),
+            'pes_being_chained_or_tied' => addslashes($_POST['pes_being_chained_or_tied']),
+            'pes_placed_in_space' => addslashes($_POST['pes_placed_in_space']),
+            'pes_forced_to_stand' => addslashes($_POST['pes_forced_to_stand']),
+            'pes_lie_or_kneel_uncomfortable' => addslashes($_POST['pes_lie_or_kneel_uncomfortable']),
+            'pes_positional_torture_explain_en' => addslashes($_POST['pes_positional_torture_explain_en'])
         );
     }
     //echo "alert('$pes_id');";

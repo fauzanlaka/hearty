@@ -517,7 +517,92 @@
         </div>
         <div class="row mb-10">
             <div class="col-md-6">
-                <label></label>
+                <label><?= $lang_text['Head Trauma'] ?></label>
+                <div class="checkbox">
+                    <label>
+                        <?php $pes_bruises = personInfo($pes_id, 'pes_bruises', $connect) ?>
+                        <input type="checkbox" name="pes_bruises" <?php if($pes_bruises=='1'){echo 'checked';} ?> value="1"><?= $lang_text['bruises'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_bleeding = personInfo($pes_id, 'pes_bleeding', $connect) ?>
+                        <input type="checkbox" name="pes_bleeding" <?php if($pes_bleeding=='1'){echo 'checked';} ?> value="1"><?= $lang_text['bleeding'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_loss_of_consciousness = personInfo($pes_id, 'pes_loss_of_consciousness', $connect) ?>
+                        <input type="checkbox" name="pes_loss_of_consciousness" <?php if($pes_loss_of_consciousness=='1'){echo 'checked';} ?> value="1"><?= $lang_text['loss of consciousness'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_numbness = personInfo($pes_id, 'pes_numbness', $connect) ?>
+                        <input type="checkbox" name="pes_numbness" <?php if($pes_numbness=='1'){echo 'checked';} ?> value="1"><?= $lang_text['numbness'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_weakness = personInfo($pes_id, 'pes_weakness', $connect) ?>
+                        <input type="checkbox" name="pes_weakness" <?php if($pes_weakness=='1'){echo 'checked';} ?> value="1"><?= $lang_text['weakness'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_head_trauma_other = personInfo($pes_id, 'pes_head_trauma_other', $connect) ?>
+                        <input type="checkbox" name="pes_head_trauma_other" <?php if($pes_head_trauma_other=='1'){echo 'checked';} ?> value="1"><?= $lang_text['etc'] ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['explain'] ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_head_trauma_explain') ?>" id="<?= elementSelect($lang_id, 'pes_head_trauma_explain') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_head_trauma_explain'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= $lang_text['Positional torture'] ?></label>
+                <div class="checkbox">
+                    <label>
+                        <?php $pes_suspension = personInfo($pes_id, 'pes_suspension', $connect) ?>
+                        <input type="checkbox" name="pes_bruises" <?php if($pes_suspension=='1'){echo 'checked';} ?> value="1"><?= $lang_text['Suspension'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_stretching_limbs_apart = personInfo($pes_id, 'pes_stretching_limbs_apart', $connect) ?>
+                        <input type="checkbox" name="pes_stretching_limbs_apart" <?php if($pes_stretching_limbs_apart=='1'){echo 'checked';} ?> value="1"><?= $lang_text['stretching limbs apart'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_prolonged_constraint_of_movement = personInfo($pes_id, 'pes_prolonged_constraint_of_movement', $connect) ?>
+                        <input type="checkbox" name="pes_prolonged_constraint_of_movement" <?php if($pes_prolonged_constraint_of_movement=='1'){echo 'checked';} ?> value="1"><?= $lang_text['prolonged constraint of movement'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_forced_positioning = personInfo($pes_id, 'pes_forced_positioning', $connect) ?>
+                        <input type="checkbox" name="pes_forced_positioning" <?php if($pes_forced_positioning=='1'){echo 'checked';} ?> value="1"><?= $lang_text['forced positioning'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_being_chained_or_tied = personInfo($pes_id, 'pes_being_chained_or_tied', $connect) ?>
+                        <input type="checkbox" name="pes_being_chained_or_tied" <?php if($pes_being_chained_or_tied=='1'){echo 'checked';} ?> value="1"><?= $lang_text['being chained or tied'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_placed_in_space = personInfo($pes_id, 'pes_placed_in_space', $connect) ?>
+                        <input type="checkbox" name="pes_placed_in_space" <?php if($pes_placed_in_space=='1'){echo 'checked';} ?> value="1"><?= $lang_text['placed in a small space'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_forced_to_stand = personInfo($pes_id, 'pes_forced_to_stand', $connect) ?>
+                        <input type="checkbox" name="pes_forced_to_stand" <?php if($pes_forced_to_stand=='1'){echo 'checked';} ?> value="1"><?= $lang_text['forced to stand'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_lie_or_kneel_uncomfortable = personInfo($pes_id, 'pes_lie_or_kneel_uncomfortable', $connect) ?>
+                        <input type="checkbox" name="pes_lie_or_kneel_uncomfortable" <?php if($pes_head_trauma_other=='1'){echo 'checked';} ?> value="1"><?= $lang_text['lie, or kneel in an uncomfortable position'] ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['explain'] ?></label>
+                <textarea class="form-control" rows="5" name="<?= elementSelect($lang_id, 'pes_positional_torture_explain') ?>" id="<?= elementSelect($lang_id, 'pes_positional_torture_explain') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_positional_torture_explain'), $connect) ?></textarea>
             </div>
         </div>
         <input type="hidden" name="operator" value="<?= $u_id ?>">

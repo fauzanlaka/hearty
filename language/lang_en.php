@@ -1,9 +1,10 @@
 <?php
     $lang_text = array(
+        'explain' => 'explain',
         'Narrative Account of Alleged Torture and Ill Treatment' => 'Narrative Account of Alleged Torture and Ill Treatment',
         'At this point, let’s talk about what happened to when you were arrested. It will be helpful if you tell me first about the arrest and then what happened to you, step by step during the time that you were detained. Please include as much detail as you can and let me know if there is something that you are not sure about' => 'At this point, let’s talk about what happened to when you were arrested. It will be helpful if you tell me first about the arrest and then what happened to you, step by step during the time that you were detained. Please include as much detail as you can and let me know if there is something that you are not sure about',
         'Review of Torture Methods' => 'Review of Torture Methods',
-        'Blunt trauma' => 'Blunt trauma',
+        'Blunt trauma' => 'Blunt trauma (check and Describe)',
         'punch' => 'punch',
         'kick' => 'kick',
         'slap' => 'slap',
@@ -15,6 +16,23 @@
         'Duration' => 'duration',
         'Restraint/Position' => 'restraint/Position',
         'Injury Location' => 'injury location(s)',
-        'Injury Observations' => 'injury observations'
+        'Injury Observations' => 'injury observations',
+        'Head Trauma' => 'head trauma (check and describe)',
+        'bruises' => 'bruises',
+        'bleeding' => 'bleeding',
+        'loss of consciousness' => 'loss of consciousness',
+        'numbness' => 'numbness',
+        'weakness' => 'weakness',
+        'etc' => 'etc',
+        'Positional torture' => 'Positional torture (check and describe)',
+        'Suspension' => 'suspension',
+        'stretching limbs apart' => 'stretching limbs apart',
+        'prolonged constraint of movement' => 'prolonged constraint of movement',
+        'forced positioning' => 'forced positioning',
+        'being chained or tied' => 'being chained or tied',
+        'placed in a small space' => 'placed in a small space (e.g., a box or under a chair)',
+        'forced to stand' => 'forced to stand',
+        'lie, or kneel in an uncomfortable position' => 'lie, or kneel in an uncomfortable position',
+        
     );
 ?>

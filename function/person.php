@@ -427,6 +427,60 @@
             case 'pes_injury_observation_en':
                 return str_replace("\'", "&#39;", $result["pes_injury_observation_en"]);
                 break;
+            case 'pes_bruises':
+                return str_replace("\'", "&#39;", $result["pes_bruises"]);
+                break;
+            case 'pes_bleeding':
+                return str_replace("\'", "&#39;", $result["pes_bleeding"]);
+                break;
+            case 'pes_loss_of_consciousness':
+                return str_replace("\'", "&#39;", $result["pes_loss_of_consciousness"]);
+                break;
+            case 'pes_numbness':
+                return str_replace("\'", "&#39;", $result["pes_numbness"]);
+                break;
+            case 'pes_weakness':
+                return str_replace("\'", "&#39;", $result["pes_weakness"]);
+                break;
+            case 'pes_head_trauma_other':
+                return str_replace("\'", "&#39;", $result["pes_head_trauma_other"]);
+                break;
+            case 'pes_head_trauma_explain_th':
+                return str_replace("\'", "&#39;", $result["pes_head_trauma_explain_th"]);
+                break;
+            case 'pes_head_trauma_explain_en':
+                return str_replace("\'", "&#39;", $result["pes_head_trauma_explain_en"]);
+                break;
+            case 'pes_suspension':
+                return str_replace("\'", "&#39;", $result["pes_bruises"]);
+                break;
+            case 'pes_stretching_limbs_apart':
+                return str_replace("\'", "&#39;", $result["pes_stretching_limbs_apart"]);
+                break;
+            case 'pes_prolonged_constraint_of_movement':
+                return str_replace("\'", "&#39;", $result["pes_prolonged_constraint_of_movement"]);
+                break;
+            case 'pes_forced_positioning':
+                return str_replace("\'", "&#39;", $result["pes_forced_positioning"]);
+                break;
+            case 'pes_being_chained_or_tied':
+                return str_replace("\'", "&#39;", $result["pes_being_chained_or_tied"]);
+                break;
+            case 'pes_placed_in_space':
+                return str_replace("\'", "&#39;", $result["pes_placed_in_space"]);
+                break;
+            case 'pes_forced_to_stand':
+                return str_replace("\'", "&#39;", $result["pes_forced_to_stand"]);
+                break;
+            case 'pes_lie_or_kneel_uncomfortable':
+                return str_replace("\'", "&#39;", $result["pes_lie_or_kneel_uncomfortable"]);
+                break;
+            case 'pes_positional_torture_explain_th':
+                return str_replace("\'", "&#39;", $result["pes_positional_torture_explain_th"]);
+                break;
+            case 'pes_positional_torture_explain_en':
+                return str_replace("\'", "&#39;", $result["pes_positional_torture_explain_en"]);
+                break;
         }
     }
 ?>
