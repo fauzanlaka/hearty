@@ -46,8 +46,8 @@
             'pes_truncheons' => addslashes($_POST['pes_truncheons']),
             'pes_falling_down' => addslashes($_POST['pes_falling_down']),
             'pes_blunt_trauma_explain_th' => addslashes($_POST['pes_blunt_trauma_explain_th']),
-            'pes_torture_frequency' => addslashes($_POST['pes_torture_frequency']),
-            'pes_turture_duration' => addslashes($_POST['pes_turture_duration']),
+            'pes_torture_frequency_th' => addslashes($_POST['pes_torture_frequency_th']),
+            'pes_turture_duration_th' => addslashes($_POST['pes_turture_duration_th']),
             'pes_turture_restraint_th' => addslashes($_POST['pes_turture_restraint_th']),
             'pes_injury_location_th' => addslashes($_POST['pes_injury_location_th']),
             'pes_injury_observation_th' => addslashes($_POST['pes_injury_observation_th']),
@@ -66,7 +66,10 @@
             'pes_placed_in_space' => addslashes($_POST['pes_placed_in_space']),
             'pes_forced_to_stand' => addslashes($_POST['pes_forced_to_stand']),
             'pes_lie_or_kneel_uncomfortable' => addslashes($_POST['pes_lie_or_kneel_uncomfortable']),
-            'pes_positional_torture_explain_th' => addslashes($_POST['pes_positional_torture_explain_th'])
+            'pes_positional_torture_explain_th' => addslashes($_POST['pes_positional_torture_explain_th']),
+            'pes_positional_torture_frequency_th' => addslashes($_POST['pes_positional_torture_frequency_th']),
+            'pes_positional_torture_duration_th' => addslashes($_POST['pes_positional_torture_duration_th']),
+            'pes_positional_torture_restraint_th' => addslashes($_POST['pes_positional_torture_restraint_th'])
         );
     }else{
         $form_data = array(
@@ -110,8 +113,8 @@
             'pes_truncheons' => addslashes($_POST['pes_truncheons']),
             'pes_falling_down' => addslashes($_POST['pes_falling_down']),
             'pes_blunt_trauma_explain_en' => addslashes($_POST['pes_blunt_trauma_explain_en']),
-            'pes_torture_frequency' => addslashes($_POST['pes_torture_frequency']),
-            'pes_turture_duration' => addslashes($_POST['pes_turture_duration']),
+            'pes_torture_frequency_en' => addslashes($_POST['pes_torture_frequency_en']),
+            'pes_turture_duration_en' => addslashes($_POST['pes_turture_duration_en']),
             'pes_turture_restraint_en' => addslashes($_POST['pes_turture_restraint_en']),
             'pes_injury_location_en' => addslashes($_POST['pes_injury_location_en']),
             'pes_injury_observation_en' => addslashes($_POST['pes_injury_observation_en']),
@@ -130,7 +133,10 @@
             'pes_placed_in_space' => addslashes($_POST['pes_placed_in_space']),
             'pes_forced_to_stand' => addslashes($_POST['pes_forced_to_stand']),
             'pes_lie_or_kneel_uncomfortable' => addslashes($_POST['pes_lie_or_kneel_uncomfortable']),
-            'pes_positional_torture_explain_en' => addslashes($_POST['pes_positional_torture_explain_en'])
+            'pes_positional_torture_explain_en' => addslashes($_POST['pes_positional_torture_explain_en']),
+            'pes_positional_torture_frequency_en' => addslashes($_POST['pes_positional_torture_frequency_en']),
+            'pes_positional_torture_duration_en' => addslashes($_POST['pes_positional_torture_duration_en']),
+            'pes_positional_torture_restraint_en' => addslashes($_POST['pes_positional_torture_restraint_en']),
         );
     }
     //echo "alert('$pes_id');";

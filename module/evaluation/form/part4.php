@@ -494,11 +494,11 @@
         <div class="row mb-10">
             <div class="col-md-3">
                 <label><?= $lang_text['Frequency'] ?></label>
-                <input type="text" class="form-control" name="pes_torture_frequency" id="pes_torture_ frequency" value="<?= personInfo($pes_id, 'pes_torture_frequency', $connect) ?>">
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_torture_frequency') ?>" id="<?= elementSelect($lang_id, 'pes_torture_frequency') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_torture_frequency'), $connect) ?>">
             </div>
             <div class="col-md-3">
                 <label><?= $lang_text['Duration'] ?></label>
-                <input type="text" class="form-control" name="pes_turture_duration" id="pes_turture_duration" value="<?= personInfo($pes_id, 'pes_turture_duration', $connect) ?>">
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_turture_duration') ?>" id="<?= elementSelect($lang_id, 'pes_turture_duration') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_turture_duration'), $connect) ?>">
             </div>
             <div class="col-md-6">
                 <label><?= $lang_text['Restraint/Position'] ?></label>
@@ -603,6 +603,26 @@
             <div class="col-md-6">
                 <label><?= $lang_text['explain'] ?></label>
                 <textarea class="form-control" rows="5" name="<?= elementSelect($lang_id, 'pes_positional_torture_explain') ?>" id="<?= elementSelect($lang_id, 'pes_positional_torture_explain') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_positional_torture_explain'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-3">
+                <label><?= $lang_text['Frequency'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_positional_torture_frequency') ?>" id="<?= elementSelect($lang_id, 'pes_positional_torture_frequency') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_positional_torture_frequency'), $connect) ?>">
+            </div>
+            <div class="col-md-3">
+                <label><?= $lang_text['Duration'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_positional_torture_duration') ?>" id="<?= elementSelect($lang_id, 'pes_positional_torture_duration') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_positional_torture_duration'), $connect) ?>">
+            </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['Restraint/Position'] ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_positional_torture_restraint') ?>" id="<?= elementSelect($lang_id, 'pes_positional_torture_restraint') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_positional_torture_restraint'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= $lang_text['Injury Location'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_') ?>" id="">
             </div>
         </div>
         <input type="hidden" name="operator" value="<?= $u_id ?>">

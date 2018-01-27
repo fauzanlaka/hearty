@@ -403,11 +403,17 @@
             case 'pes_blunt_trauma_explain_en':
                 return str_replace("\'", "&#39;", $result["pes_blunt_trauma_explain_en"]);
                 break;
-            case 'pes_torture_frequency':
-                return str_replace("\'", "&#39;", $result["pes_torture_frequency"]);
+            case 'pes_torture_frequency_th':
+                return str_replace("\'", "&#39;", $result["pes_torture_frequency_th"]);
                 break;
-            case 'pes_turture_duration':
-                return str_replace("\'", "&#39;", $result["pes_turture_duration"]);
+            case 'pes_torture_frequency_en':
+                return str_replace("\'", "&#39;", $result["pes_torture_frequency_en"]);
+                break;
+            case 'pes_turture_duration_th':
+                return str_replace("\'", "&#39;", $result["pes_turture_duration_th"]);
+                break;
+            case 'pes_turture_duration_en':
+                return str_replace("\'", "&#39;", $result["pes_turture_duration_en"]);
                 break;
             case 'pes_turture_restraint_th':
                 return str_replace("\'", "&#39;", $result["pes_turture_restraint_th"]);
@@ -480,6 +486,24 @@
                 break;
             case 'pes_positional_torture_explain_en':
                 return str_replace("\'", "&#39;", $result["pes_positional_torture_explain_en"]);
+                break;
+            case 'pes_positional_torture_frequency_th':
+                return str_replace("\'", "&#39;", $result["pes_positional_torture_frequency_th"]);
+                break;
+            case 'pes_positional_torture_frequency_en':
+                return str_replace("\'", "&#39;", $result["pes_positional_torture_frequency_en"]);
+                break;
+            case 'pes_positional_torture_duration_th':
+                return str_replace("\'", "&#39;", $result["pes_positional_torture_duration_th"]);
+                break;
+            case 'pes_positional_torture_duration_en':
+                return str_replace("\'", "&#39;", $result["pes_positional_torture_duration_en"]);
+                break;
+            case 'pes_positional_torture_restraint_th':
+                return str_replace("\'", "&#39;", $result["pes_positional_torture_restraint_th"]);
+                break;
+            case 'pes_positional_torture_restraint_en':
+                return str_replace("\'", "&#39;", $result["pes_positional_torture_restraint_en"]);
                 break;
         }
     }
