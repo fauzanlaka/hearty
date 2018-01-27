@@ -17,7 +17,7 @@
         'Restraint/Position' => 'พันธนาการ/ท่า',
         'Injury Location' => 'ตำแหน่งที่บาดเจ็บ',
         'Injury Observations' => 'ข้อสังเกตของการบาดเจ็บ',
-        'Head Trauma' => 'บาดแผลที่ศีรษะ (วงกลมและอธิบาย)',
+        'Head Trauma' => 'บาดแผลที่ศีรษะ (เลือกและอธิบาย)',
         'bruises' => 'รอยฟกช้ำ',
         'bleeding' => 'มีเลือดไหล',
         'loss of consciousness' => 'หมดสติ',
@@ -32,7 +32,9 @@
         'being chained or tied' => 'การล่ามโซ่หรือมัด',
         'placed in a small space' => 'การให้อยู่ในที่เล็กๆ (เช่นในกล่องหรือใต้เก้าอี้)',
         'forced to stand' => 'การบังคับให้ยืน',
-        'lie, or kneel in an uncomfortable position' => 'นอนหรือคุกเข่าในท่าที่ไม่สะดวกสบาย'
+        'lie, or kneel in an uncomfortable position' => 'นอนหรือคุกเข่าในท่าที่ไม่สะดวกสบาย',
+        'can' => 'ได้',
+        'can not' => 'ไม่ได้'
     );
 ?>
 

@@ -375,11 +375,11 @@
                         $pes_found_burial = personInfo($pes_id, 'pes_found_burial', $connect);
                     ?>
                     <label>
-                        <input type="radio" name="pes_found_burial" value="yes" <?php if($pes_found_burial=='yes'){echo "checked='checked'";} ?>><?= language($lang_id, 'true') ?>
+                        <input type="radio" name="pes_found_burial" value="yes" <?php if($pes_found_burial=='yes'){echo "checked='checked'";} ?>><?= $lang_text['can'] ?>
                     </label>
                         &nbsp;&nbsp;
                     <label>
-                        <input type="radio" name="pes_found_burial" value="no" <?php if($pes_found_burial=='no'){echo "checked='checked'";} ?>><?= language($lang_id, 'fasle') ?>
+                        <input type="radio" name="pes_found_burial" value="no" <?php if($pes_found_burial=='no'){echo "checked='checked'";} ?>><?= $lang_text['can not'] ?>
                     </label>
                 </div>
             </div>
@@ -622,7 +622,7 @@
         <div class="row mb-10">
             <div class="col-md-6">
                 <label><?= $lang_text['Injury Location'] ?></label>
-                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_') ?>" id="">
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_positional_torture_injury_location') ?>" id="<?= elementSelect($lang_id, 'pes_positional_torture_injury_location') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_positional_torture_injury_location'), $connect) ?>">
             </div>
         </div>
         <input type="hidden" name="operator" value="<?= $u_id ?>">
