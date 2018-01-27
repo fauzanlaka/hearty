@@ -278,7 +278,70 @@ function allegationAdd(path, formId){
             var paiValue = pai.value;
         }
     }
-    var data = data + "&ppbaValue=" + ppbaValue + "&pdValue=" + pdValue + "&pdnValue=" + pdnValue + "&psffValue=" + psffValue + "&pphValue=" + pphValue + "&pshValue=" + pshValue + '&pphsValue=' + pphsValue + "&ppdValue=" + ppdValue + "&paiValue=" + paiValue;
+    //radio button data pes_forced_harm_family
+    var pes_arrested_or_imprisoned = "";
+    var num_pc = allegationForm.elements['pes_forced_harm_family'].length;
+    for(i=0; i<num_pc; i++){
+        var pfhf = allegationForm.elements['pes_forced_harm_family'][i];
+        if(pfhf.checked){
+            var pfhfValue = pfhf.value;
+        }
+    }
+    //radio button data pes_against_religious
+    var pes_arrested_or_imprisoned = "";
+    var num_pc = allegationForm.elements['pes_against_religious'].length;
+    for(i=0; i<num_pc; i++){
+        var par = allegationForm.elements['pes_against_religious'][i];
+        if(par.checked){
+            var parValue = par.value;
+        }
+    }
+    //radio button data pes_against_religious
+    var pes_threatened_harm = "";
+    var num_pc = allegationForm.elements['pes_threatened_harm'].length;
+    for(i=0; i<num_pc; i++){
+        var pth = allegationForm.elements['pes_threatened_harm'][i];
+        if(pth.checked){
+            var pthValue = pth.value;
+        }
+    }
+    //radio button data pes_family_members_arrested
+    var pes_family_members_arrested = "";
+    var num_pc = allegationForm.elements['pes_family_members_arrested'].length;
+    for(i=0; i<num_pc; i++){
+        var pfma = allegationForm.elements['pes_family_members_arrested'][i];
+        if(pfma.checked){
+            var pfmaValue = pfma.value;
+        }
+    }
+    //radio button data pes_found_burial
+    var pes_found_burial = "";
+    var num_pc = allegationForm.elements['pes_found_burial'].length;
+    for(i=0; i<num_pc; i++){
+        var pfb = allegationForm.elements['pes_found_burial'][i];
+        if(pfb.checked){
+            var pfbValue = pfb.value;
+        }
+    }
+    //radio button data pes_witnessed_violent
+    var pes_witnessed_violent = "";
+    var num_pc = allegationForm.elements['pes_witnessed_violent'].length;
+    for(i=0; i<num_pc; i++){
+        var pwv = allegationForm.elements['pes_witnessed_violent'][i];
+        if(pwv.checked){
+            var pwvValue = pwv.value;
+        }
+    }
+    //radio button data pes_humiliation_family
+    var pes_humiliation_family = "";
+    var num_pc = allegationForm.elements['pes_humiliation_family'].length;
+    for(i=0; i<num_pc; i++){
+        var phf = allegationForm.elements['pes_humiliation_family'][i];
+        if(phf.checked){
+            var phfValue = phf.value;
+        }
+    }
+    var data = data + "&ppbaValue=" + ppbaValue + "&pdValue=" + pdValue + "&pdnValue=" + pdnValue + "&psffValue=" + psffValue + "&pphValue=" + pphValue + "&pshValue=" + pshValue + '&pphsValue=' + pphsValue + "&ppdValue=" + ppdValue + "&paiValue=" + paiValue + "&pfhfValue=" + pfhfValue + "&parValue=" + parValue + "&pthValue=" + pthValue + "&pfmaValue=" + pfmaValue + "&pfbValue=" + pfbValue + "&pwvValue=" + pwvValue + "&phfValue=" + phfValue;
     document.getElementById('processing').innerHTML = 'processing...';
     ajaxLoadFrw('post', URL, data, 'content');
 }

@@ -8,7 +8,17 @@
     include '../../../language/language.php';
     include '../../../function/person.php';
     include '../../../function/global.php';
+    //---------------------------------ตั้งค่าภาษา----------------------------------------
     $lang_id = profile($u_id, 'u_language', $connect);
+    switch($lang_id){
+        case 'th';
+            include '../../../language/lang_th.php';
+            break;
+        case 'en':
+            include '../../../language/lang_en.php';
+            break;
+    }
+    //-------------------------------\ตั้งค่าภาษา----------------------------------------
 ?>
 <div class="card">
     <div class="card-title-w-btn">
@@ -17,6 +27,8 @@
     </div>
     <hr>
     <h4><i class="fa fa-id-card"></i> <?= language($lang_id, 'ALLEGATION OF TORTURE/ILL TREATMENT') ?></h4>
+    <hr>
+    <h5 class="text-primary"><?= language($lang_id, 'Traumatic Experiences Related the Current Situation in Southern Thailand') ?></h5>
     <form name="allegationForm" id="allegationForm">
         <div class="row mb-10">
             <div class="col-md-6">
@@ -272,9 +284,240 @@
                     </label>
                 </div>
             </div>
-            <div class="col-md-6" id="hidden10" style="display: none">
+            <div class="col-md-6" id="hidden10" style="display: <?= $hidden10 ?>">
                 <label><?= language($lang_id, 'explain') ?></label>
                 <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_forced_harm_family_specify') ?>" id="<?= elementSelect($lang_id, 'pes_forced_harm_family_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_forced_harm_family_specify'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'Forced to go against your religious practices') ?></label>
+                <div class="radio">
+                    <?php
+                        $pes_against_religious = personInfo($pes_id, 'pes_against_religious', $connect);
+                        if($pes_against_religious=='yes'){
+                            $hidden11 = "block";
+                        }else{
+                            $hidden11 = "none";
+                        }
+                    ?>
+                    <label>
+                        <input type="radio" name="pes_against_religious" value="yes" onclick="openElement('hidden11')" <?php if($pes_against_religious=='yes'){echo "checked='checked'";} ?>><?= language($lang_id, 'have') ?>
+                    </label>
+                        &nbsp;&nbsp;
+                    <label>
+                        <input type="radio" name="pes_against_religious" value="no" onclick="hideElement('hidden11')" <?php if($pes_against_religious=='no'){echo "checked='checked'";} ?>><?= language($lang_id, 'not have') ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6" id="hidden11" style="display: <?= $hidden11 ?>">
+                <label><?= language($lang_id, 'explain') ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_against_religious_specify') ?>" id="<?= elementSelect($lang_id, 'pes_against_religious_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_against_religious_specify'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'Threatened with harm [physical and non-physical] to you, your family members or your friends') ?></label>
+                <div class="radio">
+                    <?php
+                        $pes_threatened_harm = personInfo($pes_id, 'pes_threatened_harm', $connect);
+                        if($pes_threatened_harm=='yes'){
+                            $hidden12 = "block";
+                        }else{
+                            $hidden12 = "none";
+                        }
+                    ?>
+                    <label>
+                        <input type="radio" name="pes_threatened_harm" value="yes" onclick="openElement('hidden12')" <?php if($pes_threatened_harm=='yes'){echo "checked='checked'";} ?>><?= language($lang_id, 'have') ?>
+                    </label>
+                        &nbsp;&nbsp;
+                    <label>
+                        <input type="radio" name="pes_threatened_harm" value="no" onclick="hideElement('hidden12')" <?php if($pes_threatened_harm=='no'){echo "checked='checked'";} ?>><?= language($lang_id, 'not have') ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6" id="hidden12" style="display: <?= $hidden12 ?>">
+                <label><?= language($lang_id, 'explain') ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_threatened_harm_specify') ?>" id="<?= elementSelect($lang_id, 'pes_threatened_harm_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_threatened_harm_specify'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'Have any of your family members or friends been arrested, beaten, disappeared, or murdered or suffered a violent death') ?></label>
+                <div class="radio">
+                    <?php
+                        $pes_family_members_arrested = personInfo($pes_id, 'pes_family_members_arrested', $connect);
+                        if($pes_family_members_arrested=='yes'){
+                            $hidden13 = "block";
+                        }else{
+                            $hidden13 = "none";
+                        }
+                    ?>
+                    <label>
+                        <input type="radio" name="pes_family_members_arrested" value="yes" onclick="openElement('hidden13')" <?php if($pes_family_members_arrested=='yes'){echo "checked='checked'";} ?>><?= language($lang_id, 'yes') ?>
+                    </label>
+                        &nbsp;&nbsp;
+                    <label>
+                        <input type="radio" name="pes_family_members_arrested" value="no" onclick="hideElement('hidden13')" <?php if($pes_family_members_arrested=='no'){echo "checked='checked'";} ?>><?= language($lang_id, 'no') ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6" id="hidden13" style="display: <?= $hidden13 ?>">
+                <label><?= language($lang_id, 'explain') ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_family_members_arrested_specify') ?>" id="<?= elementSelect($lang_id, 'pes_family_members_arrested_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_family_members_arrested_specify'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'If so, did you find the body and were you able to mourn or perform burial rites') ?></label>
+                <div class="radio">
+                    <?php
+                        $pes_found_burial = personInfo($pes_id, 'pes_found_burial', $connect);
+                    ?>
+                    <label>
+                        <input type="radio" name="pes_found_burial" value="yes" <?php if($pes_found_burial=='yes'){echo "checked='checked'";} ?>><?= language($lang_id, 'true') ?>
+                    </label>
+                        &nbsp;&nbsp;
+                    <label>
+                        <input type="radio" name="pes_found_burial" value="no" <?php if($pes_found_burial=='no'){echo "checked='checked'";} ?>><?= language($lang_id, 'fasle') ?>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'Violent acts such as beatings, killing, or violent attacks') ?></label>
+                <div class="radio">
+                    <?php
+                        $pes_witnessed_violent = personInfo($pes_id, 'pes_witnessed_violent', $connect);
+                        if($pes_witnessed_violent=='yes'){
+                            $hidden14 = "block";
+                        }else{
+                            $hidden14 = "none";
+                        }
+                    ?>
+                    <label>
+                        <input type="radio" name="pes_witnessed_violent" value="yes" onclick="openElement('hidden14')" <?php if($pes_witnessed_violent=='yes'){echo "checked='checked'";} ?>><?= language($lang_id, 'have') ?>
+                    </label>
+                        &nbsp;&nbsp;
+                    <label>
+                        <input type="radio" name="pes_witnessed_violent" value="no" onclick="openElement('hidden14')" <?php if($pes_witnessed_violent=='no'){echo "checked='checked'";} ?>><?= language($lang_id, 'not have') ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6" id="hidden14" style="display: <?= $hidden14 ?>">
+                <label><?= language($lang_id, 'explain') ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_witnessed_violent_specify') ?>" id="<?= elementSelect($lang_id, 'pes_witnessed_violent_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_witnessed_violent_specify'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'Humiliation of family, friends, community members and/or religious leaders') ?></label>
+                <div class="radio">
+                    <?php
+                        $pes_humiliation_family = personInfo($pes_id, 'pes_humiliation_family', $connect);
+                        if($pes_humiliation_family=='yes'){
+                            $hidden15 = "block";
+                        }else{
+                            $hidden15 = "none";
+                        }
+                    ?>
+                    <label>
+                        <input type="radio" name="pes_humiliation_family" value="yes" onclick="openElement('hidden15')" <?php if($pes_humiliation_family=='yes'){echo "checked='checked'";} ?>><?= language($lang_id, 'have') ?>
+                    </label>
+                        &nbsp;&nbsp;
+                    <label>
+                        <input type="radio" name="pes_humiliation_family" value="no" onclick="openElement('hidden15')" <?php if($pes_humiliation_family=='no'){echo "checked='checked'";} ?>><?= language($lang_id, 'not have') ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6" id="hidden15" style="display: <?= $hidden15 ?>">
+                <label><?= language($lang_id, 'explain') ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_humiliation_family_specify') ?>" id="<?= elementSelect($lang_id, 'pes_humiliation_family_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_humiliation_family_specify'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'Other') ?> <?= language($lang_id, 'Specify') ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_traumatic_experiences_specify') ?>" id="<?= elementSelect($lang_id, 'pes_traumatic_experiences_specify') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_traumatic_experiences_specify'), $connect) ?></textarea>
+            </div>
+        </div>
+        <hr>
+        <h5 class="text-primary"><?= $lang_text['Narrative Account of Alleged Torture and Ill Treatment'] ?></h5>
+        <div class="row mb-10">
+            <div class="col-md-12">
+                <label><?= $lang_text['At this point, let’s talk about what happened to when you were arrested. It will be helpful if you tell me first about the arrest and then what happened to you, step by step during the time that you were detained. Please include as much detail as you can and let me know if there is something that you are not sure about'] ?></label>
+                <textarea class="form-control" rows="5" name="<?= elementSelect($lang_id, 'pes_arrested_history') ?>" id="<?= elementSelect($lang_id, 'pes_arrested_history') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_arrested_history'), $connect) ?></textarea>
+            </div>
+        </div>
+        <h5 class="text-warning"><?= $lang_text['Review of Torture Methods'] ?></h5>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= $lang_text['Blunt trauma'] ?></label>
+                <div class="checkbox">
+                    <label>
+                        <?php $pes_punch = personInfo($pes_id, 'pes_punch', $connect) ?>
+                        <input type="checkbox" name="pes_punch" <?php if($pes_punch=='1'){echo 'checked';} ?> value="1"><?= $lang_text['punch'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_kick = personInfo($pes_id, 'pes_kick', $connect) ?>
+                        <input type="checkbox" name="pes_kick" <?php if($pes_kick=='1'){echo 'checked';} ?> value="1"><?= $lang_text['kick'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_slap = personInfo($pes_id, 'pes_slap', $connect) ?>
+                        <input type="checkbox" name="pes_slap" <?php if($pes_slap=='1'){echo 'checked';} ?> value="1"><?= $lang_text['slap'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_slap = personInfo($pes_id, 'pes_slap', $connect) ?>
+                        <input type="checkbox" name="pes_wire" <?php if($pes_slap=='1'){echo 'checked';} ?> value="1"><?= $lang_text['wires'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_truncheons = personInfo($pes_id, 'pes_truncheons', $connect) ?>
+                        <input type="checkbox" name="pes_truncheons" <?php if($pes_truncheons=='1'){echo 'checked';} ?> value="1"><?= $lang_text['truncheons'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_falling_down = personInfo($pes_id, 'pes_falling_down', $connect) ?>
+                        <input type="checkbox" name="pes_falling_down" <?php if($pes_falling_down=='1'){echo 'checked';} ?> value="1"><?= $lang_text['falling down'] ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label><?= language($lang_id, 'explain') ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_blunt_trauma_explain') ?>" id="<?= elementSelect($lang_id, 'pes_blunt_trauma_explain') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_blunt_trauma_explain'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-3">
+                <label><?= $lang_text['Frequency'] ?></label>
+                <input type="text" class="form-control" name="pes_torture_frequency" id="pes_torture_ frequency" value="<?= personInfo($pes_id, 'pes_torture_frequency', $connect) ?>">
+            </div>
+            <div class="col-md-3">
+                <label><?= $lang_text['Duration'] ?></label>
+                <input type="text" class="form-control" name="pes_turture_duration" id="pes_turture_duration" value="<?= personInfo($pes_id, 'pes_turture_duration', $connect) ?>">
+            </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['Restraint/Position'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_turture_restraint') ?>" id="<?= elementSelect($lang_id, 'pes_turture_restraint') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_turture_restraint'), $connect) ?>">
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= $lang_text['Injury Location'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_injury_location') ?>" id="<?= elementSelect($lang_id, 'pes_injury_location') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_injury_location'), $connect) ?>">
+            </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['Injury Observations'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_injury_observation') ?>" id="<?= elementSelect($lang_id, 'pes_injury_observation') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_injury_observation'), $connect) ?>">
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label></label>
             </div>
         </div>
         <input type="hidden" name="operator" value="<?= $u_id ?>">

@@ -295,6 +295,27 @@
                     case 'Forced to harm family members or friends':
                         return 'have you been forced to harm family members or friends?';
                         break;
+                    case 'Traumatic Experiences Related the Current Situation in Southern Thailand':
+                        return 'Traumatic Experiences Related the Current Situation in Southern Thailand';
+                        break;
+                    case 'Forced to go against your religious practices':
+                        return 'have you been forced to go against your religious practices';
+                        break;
+                    case 'Threatened with harm [physical and non-physical] to you, your family members or your friends':
+                        return 'have you been threatened with harm [physical and non-physical] to you, your family members or your friends?';
+                        break;
+                    case 'Have any of your family members or friends been arrested, beaten, disappeared, or murdered or suffered a violent death':
+                        return 'have any of your family members or friends been arrested, beaten, disappeared, or murdered or suffered a violent death';
+                        break;
+                    case 'If so, did you find the body and were you able to mourn or perform burial rites':
+                        return 'If so, did you find the body and were you able to mourn or perform burial rites?';
+                        break;
+                    case 'Violent acts such as beatings, killing, or violent attacks':
+                        return 'have you witnessed violent acts such as beatings, killing, or violent attacks?';
+                        break;
+                    case 'Humiliation of family, friends, community members and/or religious leaders':
+                        return 'have you witnessed humiliation of family, friends, community members and/or religious leaders?';
+                        break;
                 }
             //ภาษาไทย
             case 'th':
@@ -589,6 +610,27 @@
                         break;
                     case 'Forced to harm family members or friends':
                         return 'ท่านเคยถูกบังคับให้ทำร้ายสมาชิกในครอบครัวหรือเพื่อน?';
+                        break;
+                    case 'Traumatic Experiences Related the Current Situation in Southern Thailand':
+                        return 'ประสบการณ์เผชิญเหตุรุนแรงที่เกี่ยวข้องกับสถานการณ์ปัจจุบันในภาคใต้ของประเทศไทย';
+                        break;
+                    case 'Forced to go against your religious practices':
+                        return 'ท่านเคยถูกบังคับให้ต่อต้านการปฏิบัติกิจทางศาสนา?';
+                        break;
+                    case 'Threatened with harm [physical and non-physical] to you, your family members or your friends':
+                        return 'ท่านเคยถูกข่มขู่ว่าจะทำอันตราย (ทางร่างกายและไม่ใช่ทางร่างกาย) ท่าน ครอบครัวหรือเพื่อน?';
+                        break;
+                    case 'Have any of your family members or friends been arrested, beaten, disappeared, or murdered or suffered a violent death':
+                        return 'มีสมาชิกในครอบครัวหรือเพื่อนของท่านเคยถูกจับกุม ทุบตี หายตัวไป หรือถูกฆ่าหรือเผชิญกับความตายจากความรุนแรงหรือไม่?';
+                        break;
+                    case 'If so, did you find the body and were you able to mourn or perform burial rites':
+                        return 'ถ้ามี ท่านพบศพหรือไม่และสามารถประกอบพิธีฝังศพได้หรือไม่?';
+                        break;
+                    case 'Violent acts such as beatings, killing, or violent attacks':
+                        return 'ท่านเคยเป็นพยานรู้เห็นในการกระทำรุนแรง เช่น การทุบตี การฆ่า หรือการทำร้ายอย่างรุนแรง?';
+                        break;
+                    case 'Humiliation of family, friends, community members and/or religious leaders':
+                        return 'ท่านเคยเป็นพยานรู้เห็นในการทำให้ครอบครัว เพื่อน สมาชิกในชุมชน และ/หรือผู้นำทางศาสนาอับอายขายหน้า?';
                         break;
                 }
         }

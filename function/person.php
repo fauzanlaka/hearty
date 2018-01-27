@@ -319,6 +319,114 @@
             case 'pes_forced_harm_family_specify_en':
                 return str_replace("\'", "&#39;", $result["pes_forced_harm_family_specify_en"]);
                 break;
+            case 'pes_against_religious':
+                return str_replace("\'", "&#39;", $result["pes_against_religious"]);
+                break;
+            case 'pes_against_religious_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_against_religious_specify_th"]);
+                break;
+            case 'pes_against_religious_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_against_religious_specify_en"]);
+                break;
+            case 'pes_threatened_harm':
+                return str_replace("\'", "&#39;", $result["pes_threatened_harm"]);
+                break;
+            case 'pes_threatened_harm_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_threatened_harm_specify_th"]);
+                break;
+            case 'pes_threatened_harm_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_threatened_harm_specify_en"]);
+                break;
+            case 'pes_family_members_arrested':
+                return str_replace("\'", "&#39;", $result["pes_family_members_arrested"]);
+                break;
+            case 'pes_family_members_arrested_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_family_members_arrested_specify_th"]);
+                break;
+            case 'pes_family_members_arrested_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_family_members_arrested_specify_en"]);
+                break;
+            case 'pes_found_burial':
+                return str_replace("\'", "&#39;", $result["pes_found_burial"]);
+                break;
+            case 'pes_witnessed_violent':
+                return str_replace("\'", "&#39;", $result["pes_witnessed_violent"]);
+                break;
+            case 'pes_witnessed_violent_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_witnessed_violent_specify_th"]);
+                break;
+            case 'pes_witnessed_violent_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_witnessed_violent_specify_en"]);
+                break;
+            case 'pes_humiliation_family':
+                return str_replace("\'", "&#39;", $result["pes_humiliation_family"]);
+                break;
+            case 'pes_humiliation_family_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_humiliation_family_specify_th"]);
+                break;
+            case 'pes_humiliation_family_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_humiliation_family_specify_en"]);
+                break;
+            case 'pes_traumatic_experiences_specify_th':
+                return str_replace("\'", "&#39;", $result["pes_traumatic_experiences_specify_th"]);
+                break;
+            case 'pes_traumatic_experiences_specify_en':
+                return str_replace("\'", "&#39;", $result["pes_traumatic_experiences_specify_en"]);
+                break;
+            case 'pes_arrested_history_th':
+                return str_replace("\'", "&#39;", $result["pes_arrested_history_th"]);
+                break;
+            case 'pes_arrested_history_en':
+                return str_replace("\'", "&#39;", $result["pes_arrested_history_en"]);
+                break;
+            case 'pes_punch':
+                return str_replace("\'", "&#39;", $result["pes_punch"]);
+                break;
+            case 'pes_kick':
+                return str_replace("\'", "&#39;", $result["pes_kick"]);
+                break;
+            case 'pes_slap':
+                return str_replace("\'", "&#39;", $result["pes_slap"]);
+                break;
+            case 'pes_wire':
+                return str_replace("\'", "&#39;", $result["pes_wire"]);
+                break;
+            case 'pes_truncheons':
+                return str_replace("\'", "&#39;", $result["pes_truncheons"]);
+                break;
+            case 'pes_falling_down':
+                return str_replace("\'", "&#39;", $result["pes_falling_down"]);
+                break;
+            case 'pes_blunt_trauma_explain_th':
+                return str_replace("\'", "&#39;", $result["pes_blunt_trauma_explain_th"]);
+                break;
+            case 'pes_blunt_trauma_explain_en':
+                return str_replace("\'", "&#39;", $result["pes_blunt_trauma_explain_en"]);
+                break;
+            case 'pes_torture_frequency':
+                return str_replace("\'", "&#39;", $result["pes_torture_frequency"]);
+                break;
+            case 'pes_turture_duration':
+                return str_replace("\'", "&#39;", $result["pes_turture_duration"]);
+                break;
+            case 'pes_turture_restraint_th':
+                return str_replace("\'", "&#39;", $result["pes_turture_restraint_th"]);
+                break;
+            case 'pes_turture_restraint_en':
+                return str_replace("\'", "&#39;", $result["pes_turture_restraint_en"]);
+                break;
+            case 'pes_injury_location_th':
+                return str_replace("\'", "&#39;", $result["pes_injury_location_th"]);
+                break;
+            case 'pes_injury_location_en':
+                return str_replace("\'", "&#39;", $result["pes_injury_location_en"]);
+                break;
+            case 'pes_injury_observation_th':
+                return str_replace("\'", "&#39;", $result["pes_injury_observation_th"]);
+                break;
+            case 'pes_injury_observation_en':
+                return str_replace("\'", "&#39;", $result["pes_injury_observation_en"]);
+                break;
         }
     }
 ?>

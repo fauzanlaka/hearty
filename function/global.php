@@ -120,3 +120,13 @@
                 break;
         }
     }
+    function lang_swap($lang_id, $path){
+        switch ($lang_id){
+            case 'th';
+                include $path;
+                break;
+            case 'en':
+                echo $path;
+                break;
+        }
+    }
