@@ -682,6 +682,16 @@
 =======
 >>>>>>> b309650d229ea510f1012b9145bbb4c01394fac8
         </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= $lang_text['Frequency'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_extreme_temperatures_frequency') ?>" id="<?= elementSelect($lang_id, 'pes_extreme_temperatures_frequency') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_extreme_temperatures_frequency'), $connect) ?>">
+            </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['Duration'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_extreme_temperatures_duration') ?>" id="<?= elementSelect($lang_id, 'pes_extreme_temperatures_duration') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_extreme_temperatures_duration'), $connect) ?>">
+            </div>
+        </div>
         <input type="hidden" name="operator" value="<?= $u_id ?>">
         <input type="hidden" name="pes_id" value="<?= $pes_id ?>">
         <input type="hidden" name="lang_id" value="<?= $lang_id ?>">
