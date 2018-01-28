@@ -505,6 +505,42 @@
             case 'pes_positional_torture_restraint_en':
                 return str_replace("\'", "&#39;", $result["pes_positional_torture_restraint_en"]);
                 break;
+            case 'pes_positional_torture_injury_location_th':
+                return str_replace("\'", "&#39;", $result["pes_positional_torture_injury_location_th"]);
+                break;
+            case 'pes_positional_torture_injury_location_en':
+                return str_replace("\'", "&#39;", $result["pes_positional_torture_injury_location_en"]);
+                break;
+            case 'pes_positioanl_inturry_abservation_th':
+                return str_replace("\'", "&#39;", $result["pes_positioanl_inturry_abservation_th"]);
+                break;
+            case 'pes_positioanl_inturry_abservation_en':
+                return str_replace("\'", "&#39;", $result["pes_positioanl_inturry_abservation_en"]);
+                break;
+            case 'pes_exposed_to_heat':
+                return str_replace("\'", "&#39;", $result["pes_exposed_to_heat"]);
+                break;
+            case 'pes_sun':
+                return str_replace("\'", "&#39;", $result["pes_sun"]);
+                break;
+            case 'pes_rain':
+                return str_replace("\'", "&#39;", $result["pes_rain"]);
+                break;
+            case 'pes_body_immersion':
+                return str_replace("\'", "&#39;", $result["pes_body_immersion"]);
+                break;
+            case 'pes_cold':
+                return str_replace("\'", "&#39;", $result["pes_cold"]);
+                break;
+            case 'pes_forced_to_sit_on_ice':
+                return str_replace("\'", "&#39;", $result["pes_forced_to_sit_on_ice"]);
+                break;
+            case 'exposure_extreme_temperatures_th':
+                return str_replace("\'", "&#39;", $result["exposure_extreme_temperatures_th"]);
+                break;
+            case 'exposure_extreme_temperatures_en':
+                return str_replace("\'", "&#39;", $result["exposure_extreme_temperatures_en"]);
+                break;
         }
     }
 ?>

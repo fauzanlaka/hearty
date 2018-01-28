@@ -69,7 +69,16 @@
             'pes_positional_torture_explain_th' => addslashes($_POST['pes_positional_torture_explain_th']),
             'pes_positional_torture_frequency_th' => addslashes($_POST['pes_positional_torture_frequency_th']),
             'pes_positional_torture_duration_th' => addslashes($_POST['pes_positional_torture_duration_th']),
-            'pes_positional_torture_restraint_th' => addslashes($_POST['pes_positional_torture_restraint_th'])
+            'pes_positional_torture_restraint_th' => addslashes($_POST['pes_positional_torture_restraint_th']),
+            'pes_positional_torture_injury_location_th' => addslashes($_POST['pes_positional_torture_injury_location_th']),
+            'pes_positioanl_inturry_abservation_th' => addslashes($_POST['pes_positioanl_inturry_abservation_th']),
+            'pes_exposed_to_heat' => addslashes($_POST['pes_exposed_to_heat']),
+            'pes_sun' => addslashes($_POST['pes_sun']),
+            'pes_rain' => addslashes($_POST['pes_rain']),
+            'pes_body_immersion' => addslashes($_POST['pes_body_immersion']),
+            'pes_cold' => addslashes($_POST['pes_cold']),
+            'pes_forced_to_sit_on_ice' => addslashes($_POST['pes_forced_to_sit_on_ice']),
+            'exposure_extreme_temperatures_th' => addslashes($_POST['exposure_extreme_temperatures_th'])
         );
     }else{
         $form_data = array(
@@ -137,6 +146,15 @@
             'pes_positional_torture_frequency_en' => addslashes($_POST['pes_positional_torture_frequency_en']),
             'pes_positional_torture_duration_en' => addslashes($_POST['pes_positional_torture_duration_en']),
             'pes_positional_torture_restraint_en' => addslashes($_POST['pes_positional_torture_restraint_en']),
+            'pes_positional_torture_injury_location_en' => addslashes($_POST['pes_positional_torture_injury_location_en']),
+            'pes_positioanl_inturry_abservation_en' => addslashes($_POST['pes_positioanl_inturry_abservation_en']),
+            'pes_exposed_to_heat' => addslashes($_POST['pes_exposed_to_heat']),
+            'pes_sun' => addslashes($_POST['pes_sun']),
+            'pes_rain' => addslashes($_POST['pes_rain']),
+            'pes_body_immersion' => addslashes($_POST['pes_body_immersion']),
+            'pes_cold' => addslashes($_POST['pes_cold']),
+            'pes_forced_to_sit_on_ice' => addslashes($_POST['pes_forced_to_sit_on_ice']),
+            'exposure_extreme_temperatures_en' => addslashes($_POST['exposure_extreme_temperatures_en'])
         );
     }
     //echo "alert('$pes_id');";
