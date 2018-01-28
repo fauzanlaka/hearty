@@ -34,6 +34,13 @@
         'forced to stand' => 'forced to stand',
         'lie, or kneel in an uncomfortable position' => 'lie, or kneel in an uncomfortable position',
         'can' => 'yes',
-        'can not' => 'no'
+        'can not' => 'no',
+        'Exposure to extreme temperatures' => 'exposure to extreme temperatures (check and describe)',
+        'exposed to heat' => 'exposed to heat',
+        'sun' => 'sun',
+        'rain' => 'rain',
+        'body immersion' => 'body immersion',
+        'cold' => 'cold',
+        'forced to sit on ice' => 'forced to sit on ice'
     );
 ?>

@@ -34,7 +34,14 @@
         'forced to stand' => 'การบังคับให้ยืน',
         'lie, or kneel in an uncomfortable position' => 'นอนหรือคุกเข่าในท่าที่ไม่สะดวกสบาย',
         'can' => 'ได้',
-        'can not' => 'ไม่ได้'
+        'can not' => 'ไม่ได้',
+        'Exposure to extreme temperatures' => 'การอยู่ในอุณหภูมิสุดขั้ว (เลือกและอธิบาย)',
+        'exposed to heat' => 'โดนความร้อน',
+        'sun' => 'ตากแดด',
+        'rain' => 'ตากฝน',
+        'body immersion' => 'แช่ในน้ำ',
+        'cold' => 'ความหนาว',
+        'forced to sit on ice' => 'บังคับให้นั่งบนน้ำแข็ง'
     );
 ?>
 

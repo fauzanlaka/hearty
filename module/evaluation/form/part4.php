@@ -624,6 +624,60 @@
                 <label><?= $lang_text['Injury Location'] ?></label>
                 <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_positional_torture_injury_location') ?>" id="<?= elementSelect($lang_id, 'pes_positional_torture_injury_location') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_positional_torture_injury_location'), $connect) ?>">
             </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['Injury Observations'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_positioanl_inturry_abservation') ?>" id="<?= elementSelect($lang_id, 'pes_positioanl_inturry_abservation') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_positioanl_inturry_abservation'), $connect) ?>">
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= $lang_text['Exposure to extreme temperatures'] ?></label>
+                <div class="checkbox">
+                    <label>
+                        <?php $pes_exposed_to_heat = personInfo($pes_id, 'pes_exposed_to_heat', $connect) ?>
+                        <input type="checkbox" name="pes_exposed_to_heat" <?php if($pes_exposed_to_heat=='1'){echo 'checked';} ?> value="1"><?= $lang_text['exposed to heat'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_sun = personInfo($pes_id, 'pes_sun', $connect) ?>
+                        <input type="checkbox" name="pes_sun" <?php if($pes_sun=='1'){echo 'checked';} ?> value="1"><?= $lang_text['sun'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_rain = personInfo($pes_id, 'pes_rain', $connect) ?>
+                        <input type="checkbox" name="pes_rain" <?php if($pes_rain=='1'){echo 'checked';} ?> value="1"><?= $lang_text['rain'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_body_immersion = personInfo($pes_id, 'pes_body_immersion', $connect) ?>
+                        <input type="checkbox" name="pes_body_immersion" <?php if($pes_body_immersion=='1'){echo 'checked';} ?> value="1"><?= $lang_text['body immersion'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_cold = personInfo($pes_id, 'pes_cold', $connect) ?>
+                        <input type="checkbox" name="pes_cold" <?php if($pes_cold=='1'){echo 'checked';} ?> value="1"><?= $lang_text['cold'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php $pes_forced_to_sit_on_ice = personInfo($pes_id, 'pes_forced_to_sit_on_ice', $connect) ?>
+                        <input type="checkbox" name="pes_forced_to_sit_on_ice" <?php if($pes_forced_to_sit_on_ice=='1'){echo 'checked';} ?> value="1"><?= $lang_text['forced to sit on ice'] ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['explain'] ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'exposure_extreme_temperatures') ?>" id="<?= elementSelect($lang_id, 'exposure_extreme_temperatures') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'exposure_extreme_temperatures'), $connect) ?></textarea>
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= $lang_text['Frequency'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_extreme_temperatures_frequency') ?>" id="<?= elementSelect($lang_id, 'pes_extreme_temperatures_frequency') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_extreme_temperatures_frequency'), $connect) ?>">
+            </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['Duration'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_extreme_temperatures_duration') ?>" id="<?= elementSelect($lang_id, 'pes_extreme_temperatures_duration') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_extreme_temperatures_duration'), $connect) ?>">
+            </div>
         </div>
         <input type="hidden" name="operator" value="<?= $u_id ?>">
         <input type="hidden" name="pes_id" value="<?= $pes_id ?>">
