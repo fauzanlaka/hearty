@@ -541,6 +541,18 @@
             case 'exposure_extreme_temperatures_en':
                 return str_replace("\'", "&#39;", $result["exposure_extreme_temperatures_en"]);
                 break;
+            case 'pes_extreme_temperatures_frequency_th':
+                return str_replace("\'", "&#39;", $result["pes_extreme_temperatures_frequency_th"]);
+                break;
+            case 'pes_extreme_temperatures_frequency_en':
+                return str_replace("\'", "&#39;", $result["pes_extreme_temperatures_frequency_en"]);
+                break;
+            case 'pes_extreme_temperatures_duration_th':
+                return str_replace("\'", "&#39;", $result["pes_extreme_temperatures_duration_th"]);
+                break;
+            case 'pes_extreme_temperatures_duration_en':
+                return str_replace("\'", "&#39;", $result["pes_extreme_temperatures_duration_en"]);
+                break;
         }
     }
 ?>

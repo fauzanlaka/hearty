@@ -78,7 +78,9 @@
             'pes_body_immersion' => addslashes($_POST['pes_body_immersion']),
             'pes_cold' => addslashes($_POST['pes_cold']),
             'pes_forced_to_sit_on_ice' => addslashes($_POST['pes_forced_to_sit_on_ice']),
-            'exposure_extreme_temperatures_th' => addslashes($_POST['exposure_extreme_temperatures_th'])
+            'exposure_extreme_temperatures_th' => addslashes($_POST['exposure_extreme_temperatures_th']),
+            'pes_extreme_temperatures_frequency_th' => addslashes($_POST['pes_extreme_temperatures_frequency_th']),
+            'pes_extreme_temperatures_duration_th' => addslashes($_POST['pes_extreme_temperatures_duration_th'])
         );
     }else{
         $form_data = array(
@@ -154,7 +156,9 @@
             'pes_body_immersion' => addslashes($_POST['pes_body_immersion']),
             'pes_cold' => addslashes($_POST['pes_cold']),
             'pes_forced_to_sit_on_ice' => addslashes($_POST['pes_forced_to_sit_on_ice']),
-            'exposure_extreme_temperatures_en' => addslashes($_POST['exposure_extreme_temperatures_en'])
+            'exposure_extreme_temperatures_en' => addslashes($_POST['exposure_extreme_temperatures_en']),
+            'pes_extreme_temperatures_frequency_en' => addslashes($_POST['pes_extreme_temperatures_frequency_en']),
+            'pes_extreme_temperatures_duration_en' => addslashes($_POST['pes_extreme_temperatures_duration_en'])
         );
     }
     //echo "alert('$pes_id');";
