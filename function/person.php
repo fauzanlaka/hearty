@@ -541,6 +541,10 @@
             case 'exposure_extreme_temperatures_en':
                 return str_replace("\'", "&#39;", $result["exposure_extreme_temperatures_en"]);
                 break;
+<<<<<<< HEAD
+            
+=======
+>>>>>>> b309650d229ea510f1012b9145bbb4c01394fac8
         }
     }
 ?>
