@@ -41,6 +41,11 @@
         'rain' => 'rain',
         'body immersion' => 'body immersion',
         'cold' => 'cold',
-        'forced to sit on ice' => 'forced to sit on ice'
+        'forced to sit on ice' => 'forced to sit on ice',
+        'Burns' => 'Burns (check and describe)',
+        'burn cigarettes' => 'burn cigarettes',
+        'heated instrument' => 'heated instrument',
+        'scalding water or other liquid' => 'scalding water or other liquid',
+        'caustic substance' => 'caustic substance'
     );
 ?>

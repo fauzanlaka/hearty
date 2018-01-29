@@ -41,7 +41,12 @@
         'rain' => 'ตากฝน',
         'body immersion' => 'แช่ในน้ำ',
         'cold' => 'ความหนาว',
-        'forced to sit on ice' => 'บังคับให้นั่งบนน้ำแข็ง'
+        'forced to sit on ice' => 'บังคับให้นั่งบนน้ำแข็ง',
+        'Burns' => 'การเผาไหม้ (เลือกและอธิบาย)',
+        'burn cigarettes' => 'ด้วยบุหรี่',
+        'heated instrument' => 'อุปกรณ์ที่ถูกทำให้ร้อน',
+        'scalding water or other liquid' => 'น้ำหรือของเหลวที่มีความร้อน',
+        'caustic substance' => 'สารกัดกร่อน'
     );
 ?>
 
