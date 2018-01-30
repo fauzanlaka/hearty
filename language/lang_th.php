@@ -46,7 +46,14 @@
         'burn cigarettes' => 'ด้วยบุหรี่',
         'heated instrument' => 'อุปกรณ์ที่ถูกทำให้ร้อน',
         'scalding water or other liquid' => 'น้ำหรือของเหลวที่มีความร้อน',
-        'caustic substance' => 'สารกัดกร่อน'
+        'caustic substance' => 'สารกัดกร่อน',
+        'Electric shock' => 'ช็อตด้วยไฟฟ้า',
+        'describe' => 'อธิบาย',
+        'Asphyxiation' => 'ทำให้ขาดอากาศหายใจ  (เลือกและอธิบาย)',
+        'wet and dry methods' => 'ด้วยวิธีเปียกและแห้ง',
+        'drowning' => 'จมน้ำ',
+        'smothering' => 'สำลักควัน',
+        'choking chemicals' => 'สำลักสารเคมี'
     );
 ?>
 

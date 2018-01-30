@@ -87,7 +87,26 @@
             'pes_heated_instrument' => addslashes($_POST['pes_heated_instrument']),
             'pes_scalding_liquid' => addslashes($_POST['pes_scalding_liquid']),
             'pes_caustic_substance' => addslashes($_POST['pes_caustic_substance']),
-            'pes_burn_explain_th' => addslashes($_POST['pes_burn_explain_th'])
+            'pes_burn_explain_th' => addslashes($_POST['pes_burn_explain_th']),
+            'pes_burn_frequency_th' => addslashes($_POST['pes_burn_frequency_th']),
+            'pes_burn_duration_th' => addslashes($_POST['pes_burn_duration_th']),
+            'pes_burn_restraint_th' => addslashes($_POST['pes_burn_restraint_th']),
+            'pes_burn_injury_location_th' => addslashes($_POST['pes_burn_injury_location_th']),
+            'pes_burn_injury_observations_th' => addslashes($_POST['pes_burn_injury_observations_th']),
+            'pes_electric_shock_explain_th' => addslashes($_POST['pes_electric_shock_explain_th']),
+            'pes_electric_shock_frequency_th' => addslashes($_POST['pes_electric_shock_frequency_th']),
+            'pes_electric_shock_duration_th' => addslashes($_POST['pes_electric_shock_duration_th']),
+            'pes_electric_shock_injury_location_th' => addslashes($_POST['pes_electric_shock_injury_location_th']),
+            'pes_electric_shock_injury_observation_th' => addslashes($_POST['pes_electric_shock_injury_observation_th']),
+            'pes_asphyxiation_wet_and_dry_methods' => addslashes($_POST['pes_asphyxiation_wet_and_dry_methods']),
+            'pes_asphyxiation_drowning' => addslashes($_POST['pes_asphyxiation_drowning']),
+            'pes_asphyxiation_smothering' => addslashes($_POST['pes_asphyxiation_smothering']),
+            'pes_asphyxiation_choking_chemicals' => addslashes($_POST['pes_asphyxiation_choking_chemicals']),
+            'pes_asphyxiation_explain_th' => addslashes($_POST['pes_asphyxiation_explain_th']),
+            'pes_asphyxiation_frequency_th' => addslashes($_POST['pes_asphyxiation_frequency_th']),
+            'pes_asphyxiation_duration_th' => addslashes($_POST['pes_asphyxiation_duration_th']),
+            'pes_asphyxiation_restraint_th' => addslashes($_POST['pes_asphyxiation_restraint_th']),
+            'pes_asphyxiation_injury_observations_th' => addslashes($_POST['pes_asphyxiation_injury_observations_th'])
         );
     }else{
         $form_data = array(
@@ -172,7 +191,26 @@
             'pes_heated_instrument' => addslashes($_POST['pes_heated_instrument']),
             'pes_scalding_liquid' => addslashes($_POST['pes_scalding_liquid']),
             'pes_caustic_substance' => addslashes($_POST['pes_caustic_substance']),
-            'pes_burn_explain_en' => addslashes($_POST['pes_burn_explain_en'])
+            'pes_burn_explain_en' => addslashes($_POST['pes_burn_explain_en']),
+            'pes_burn_frequency_en' => addslashes($_POST['pes_burn_frequency_en']),
+            'pes_burn_duration_en' => addslashes($_POST['pes_burn_duration_en']),
+            'pes_burn_restraint_en' => addslashes($_POST['pes_burn_restraint_en']),
+            'pes_burn_injury_location_en' => addslashes($_POST['pes_burn_injury_location_en']),
+            'pes_burn_injury_observations_en' => addslashes($_POST['pes_burn_injury_observations_en']),
+            'pes_electric_shock_explain_en' => addslashes($_POST['pes_electric_shock_explain_en']),
+            'pes_electric_shock_frequency_en' => addslashes($_POST['pes_electric_shock_frequency_en']),
+            'pes_electric_shock_duration_en' => addslashes($_POST['pes_electric_shock_duration_en']),
+            'pes_electric_shock_injury_location_en' => addslashes($_POST['pes_electric_shock_injury_location_en']),
+            'pes_electric_shock_injury_observation_en' => addslashes($_POST['pes_electric_shock_injury_observation_en']),
+            'pes_asphyxiation_wet_and_dry_methods' => addslashes($_POST['pes_asphyxiation_wet_and_dry_methods']),
+            'pes_asphyxiation_drowning' => addslashes($_POST['pes_asphyxiation_drowning']),
+            'pes_asphyxiation_smothering' => addslashes($_POST['pes_asphyxiation_smothering']),
+            'pes_asphyxiation_choking_chemicals' => addslashes($_POST['pes_asphyxiation_choking_chemicals']),
+            'pes_asphyxiation_explain_en' => addslashes($_POST['pes_asphyxiation_explain_en']),
+            'pes_asphyxiation_frequency_en' => addslashes($_POST['pes_asphyxiation_frequency_en']),
+            'pes_asphyxiation_duration_en' => addslashes($_POST['pes_asphyxiation_duration_en']),
+            'pes_asphyxiation_restraint_en' => addslashes($_POST['pes_asphyxiation_restraint_en']),
+            'pes_asphyxiation_injury_observations_en' => addslashes($_POST['pes_asphyxiation_injury_observations_en'])
         );
     }
     //echo "alert('$pes_id');";

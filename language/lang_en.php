@@ -46,6 +46,13 @@
         'burn cigarettes' => 'burn cigarettes',
         'heated instrument' => 'heated instrument',
         'scalding water or other liquid' => 'scalding water or other liquid',
-        'caustic substance' => 'caustic substance'
+        'caustic substance' => 'caustic substance',
+        'Electric shock' => 'electric shock',
+        'describe' => 'describe',
+        'Asphyxiation' => 'Asphyxiation (check and describe)',
+        'wet and dry methods' => 'wet and dry methods',
+        'drowning' => 'drowning',
+        'smothering' => 'smothering',
+        'choking chemicals' => 'choking chemicals'
     );
 ?>
