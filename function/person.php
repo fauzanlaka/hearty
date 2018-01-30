@@ -682,6 +682,10 @@
             case 'pes_asphyxiation_injury_observations_en':
                 return str_replace("\'", "&#39;", $result["pes_asphyxiation_injury_observations_en"]);
                 break;
+            case 'pes_asphyxiation_injury_observations_en':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_injury_observations_en"]);
+                break;
+            
         }
     }
 ?>

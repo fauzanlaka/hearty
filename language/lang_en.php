@@ -53,6 +53,9 @@
         'wet and dry methods' => 'wet and dry methods',
         'drowning' => 'drowning',
         'smothering' => 'smothering',
-        'choking chemicals' => 'choking chemicals'
+        'choking chemicals' => 'choking chemicals',
+        'Crush injuries' => 'crush injuries (check and Describe)',
+        'smashing fingers' => 'smashing fingers',
+        'heavy roller to thighs/back' => 'heavy roller to thighs/back'
     );
 ?>

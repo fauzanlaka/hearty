@@ -53,7 +53,10 @@
         'wet and dry methods' => 'ด้วยวิธีเปียกและแห้ง',
         'drowning' => 'จมน้ำ',
         'smothering' => 'สำลักควัน',
-        'choking chemicals' => 'สำลักสารเคมี'
+        'choking chemicals' => 'สำลักสารเคมี',
+        'Crush injuries' => 'บาดแผลจากแรงบด (เลือกและอธิบาย)',
+        'smashing fingers' => 'บดนิ้วมือ',
+        'heavy roller to thighs/back' => 'ใช้ลูกกลิ้งหนักกดบริเวณโคนขาหรือแผ่นหลัง'
     );
 ?>
 

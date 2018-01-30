@@ -821,6 +821,51 @@
             </div>
         </div>
         <hr>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= $lang_text['Crush injuries'] ?></label>
+                <div class="checkbox">
+                    <label>
+                        <?php //$pes_crush_smashing_fingers = personInfo($pes_id, 'pes_crush_smashing_fingers', $connect) ?>
+                        <input type="checkbox" name="pes_crush_smashing_fingers" <?php //if($pes_crush_smashing_fingers=='1'){echo 'checked';} ?> value="1"><?= $lang_text['smashing fingers'] ?>
+                    </label>
+                    &nbsp;&nbsp;
+                    <label>
+                        <?php //$pes_scrush_heavy_roller = personInfo($pes_id, 'pes_scrush_heavy_roller', $connect) ?>
+                        <input type="checkbox" name="pes_scrush_heavy_roller" <?php //if($pes_scrush_heavy_roller=='1'){echo 'checked';} ?> value="1"><?= $lang_text['heavy roller to thighs/back'] ?>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['explain'] ?></label>
+                <textarea class="form-control" rows="3" name="<?= elementSelect($lang_id, 'pes_scrush_injuries_explain') ?>" id="<?= elementSelect($lang_id, 'pes_scrush_injuries_explain') ?>"><?= personInfo($pes_id, elementSelect($lang_id, 'pes_scrush_injuries_explain'), $connect) ?></textarea> 
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-3">
+                <label><?= $lang_text['Frequency'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_crush_frequency') ?>" id="<?= elementSelect($lang_id, 'pes_crush_frequency') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_crush_frequency'), $connect) ?>">
+            </div>
+            <div class="col-md-3">
+                <label><?= $lang_text['Duration'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_crush_duration') ?>" id="<?= elementSelect($lang_id, 'pes_crush_duration') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_crush_duration'), $connect) ?>">
+            </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['Restraint/Position'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_crush_restraint') ?>" id="<?= elementSelect($lang_id, 'pes_crush_restraint') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_crush_restraint'), $connect) ?>">
+            </div>
+        </div>
+        <div class="row mb-10">
+            <div class="col-md-6">
+                <label><?= $lang_text['Injury Location'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_crush_injury_location') ?>" id="" value="">
+            </div>
+            <div class="col-md-6">
+                <label><?= $lang_text['Injury Observations'] ?></label>
+                <input type="text" class="form-control" name="<?= elementSelect($lang_id, 'pes_crush_injury_observation') ?>" id="<?= elementSelect($lang_id, 'pes_crush_injury_observation') ?>" value="<?= personInfo($pes_id, elementSelect($lang_id, 'pes_crush_injury_observation'), $connect) ?>">
+            </div>
+        </div>
+        <hr>
         <input type="hidden" name="operator" value="<?= $u_id ?>">
         <input type="hidden" name="pes_id" value="<?= $pes_id ?>">
         <input type="hidden" name="lang_id" value="<?= $lang_id ?>">
