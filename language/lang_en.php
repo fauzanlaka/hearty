@@ -46,6 +46,7 @@
         'Acute Injury Type (circle)' => 'Acute Injury Type (circle)',
         'Pain' => 'pain',
         'Other' => 'other',
-        'specify' => 'specify'
+        'specify' => 'specify',
+        'Laceration' => 'Laceration'
     );
 ?>
