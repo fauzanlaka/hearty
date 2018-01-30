@@ -553,6 +553,135 @@
             case 'pes_extreme_temperatures_duration_en':
                 return str_replace("\'", "&#39;", $result["pes_extreme_temperatures_duration_en"]);
                 break;
+            case 'pes_extreme_temperatures_injury_location_th':
+                return str_replace("\'", "&#39;", $result["pes_extreme_temperatures_injury_location_th"]);
+                break;
+            case 'pes_extreme_temperatures_injury_location_en':
+                return str_replace("\'", "&#39;", $result["pes_extreme_temperatures_injury_location_en"]);
+                break;
+            case 'pes_extreme_temperatures_injury_observation_th':
+                return str_replace("\'", "&#39;", $result["pes_extreme_temperatures_injury_observation_th"]);
+                break;
+            case 'pes_extreme_temperatures_injury_observation_en':
+                return str_replace("\'", "&#39;", $result["pes_extreme_temperatures_injury_observation_en"]);
+                break;
+            case 'pes_burn_cigarettes':
+                return str_replace("\'", "&#39;", $result["pes_burn_cigarettes"]);
+                break;
+            case 'pes_heated_instrument':
+                return str_replace("\'", "&#39;", $result["pes_heated_instrument"]);
+                break;
+            case 'pes_scalding_liquid':
+                return str_replace("\'", "&#39;", $result["pes_scalding_liquid"]);
+                break;
+            case 'pes_caustic_substance':
+                return str_replace("\'", "&#39;", $result["pes_caustic_substance"]);
+                break;
+            case 'pes_burn_explain_th':
+                return str_replace("\'", "&#39;", $result["pes_burn_explain_th"]);
+                break;
+            case 'pes_burn_frequency_th':
+                return str_replace("\'", "&#39;", $result["pes_burn_frequency_th"]);
+                break;
+            case 'pes_burn_frequency_en':
+                return str_replace("\'", "&#39;", $result["pes_burn_frequency_en"]);
+                break;
+            case 'pes_burn_duration_th':
+                return str_replace("\'", "&#39;", $result["pes_burn_duration_th"]);
+                break;
+            case 'pes_burn_duration_en':
+                return str_replace("\'", "&#39;", $result["pes_burn_duration_en"]);
+                break;
+            case 'pes_burn_restraint_th':
+                return str_replace("\'", "&#39;", $result["pes_burn_restraint_th"]);
+                break;
+            case 'pes_burn_restraint_en':
+                return str_replace("\'", "&#39;", $result["pes_burn_restraint_en"]);
+                break;
+            case 'pes_burn_injury_location_th':
+                return str_replace("\'", "&#39;", $result["pes_burn_injury_location_th"]);
+                break;
+            case 'pes_burn_injury_location_en':
+                return str_replace("\'", "&#39;", $result["pes_burn_injury_location_en"]);
+                break;
+            case 'pes_burn_injury_observations_th':
+                return str_replace("\'", "&#39;", $result["pes_burn_injury_observations_th"]);
+                break;
+            case 'pes_burn_injury_observations_en':
+                return str_replace("\'", "&#39;", $result["pes_burn_injury_observations_en"]);
+                break;
+            case 'pes_electric_shock_explain_th':
+                return str_replace("\'", "&#39;", $result["pes_electric_shock_explain_th"]);
+                break;
+            case 'pes_electric_shock_explain_en':
+                return str_replace("\'", "&#39;", $result["pes_electric_shock_explain_en"]);
+                break;
+            case 'pes_electric_shock_frequency_th':
+                return str_replace("\'", "&#39;", $result["pes_electric_shock_frequency_th"]);
+                break;
+            case 'pes_electric_shock_frequency_en':
+                return str_replace("\'", "&#39;", $result["pes_electric_shock_frequency_en"]);
+                break;
+            case 'pes_electric_shock_duration_th':
+                return str_replace("\'", "&#39;", $result["pes_electric_shock_duration_th"]);
+                break;
+            case 'pes_electric_shock_duration_en':
+                return str_replace("\'", "&#39;", $result["pes_electric_shock_duration_en"]);
+                break;
+            case 'pes_electric_shock_injury_location_th':
+                return str_replace("\'", "&#39;", $result["pes_electric_shock_injury_location_th"]);
+                break;
+            case 'pes_electric_shock_injury_location_en':
+                return str_replace("\'", "&#39;", $result["pes_electric_shock_injury_location_en"]);
+                break;
+            case 'pes_electric_shock_injury_observation_th':
+                return str_replace("\'", "&#39;", $result["pes_electric_shock_injury_observation_th"]);
+                break;
+            case 'pes_electric_shock_injury_observation_en':
+                return str_replace("\'", "&#39;", $result["pes_electric_shock_injury_observation_en"]);
+                break;
+            case 'pes_asphyxiation_wet_and_dry_methods':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_wet_and_dry_methods"]);
+                break;
+            case 'pes_asphyxiation_drowning':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_drowning"]);
+                break;
+            case 'pes_asphyxiation_smothering':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_smothering"]);
+                break;
+            case 'pes_asphyxiation_choking_chemicals':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_choking_chemicals"]);
+                break;
+            case 'pes_asphyxiation_explain_th':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_explain_th"]);
+                break;
+            case 'pes_asphyxiation_explain_en':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_explain_en"]);
+                break;
+            case 'pes_asphyxiation_frequency_th':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_frequency_th"]);
+                break;
+            case 'pes_asphyxiation_frequency_en':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_frequency_en"]);
+                break;
+            case 'pes_asphyxiation_duration_th':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_duration_th"]);
+                break;
+            case 'pes_asphyxiation_duration_en':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_duration_en"]);
+                break;
+            case 'pes_asphyxiation_restraint_th':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_restraint_th"]);
+                break;
+            case 'pes_asphyxiation_restraint_en':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_restraint_en"]);
+                break;
+            case 'pes_asphyxiation_injury_observations_th':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_injury_observations_th"]);
+                break;
+            case 'pes_asphyxiation_injury_observations_en':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_injury_observations_en"]);
+                break;
         }
     }
 ?>
