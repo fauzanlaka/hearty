@@ -63,3 +63,10 @@ function openElement(elementId){
 function hideElement(elementId){
     document.getElementById(elementId).style.display = 'none';
 }
+function checkHide(id){
+    if(document.getElementById(id).style.display=='none'){
+        document.getElementById(id).style.display = 'block';
+    }else{
+        document.getElementById(id).style.display = 'none';
+    }
+}

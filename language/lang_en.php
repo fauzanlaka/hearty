@@ -41,6 +41,11 @@
         'rain' => 'rain',
         'body immersion' => 'body immersion',
         'cold' => 'cold',
-        'forced to sit on ice' => 'forced to sit on ice'
+        'forced to sit on ice' => 'forced to sit on ice',
+        'Physical evidence' => 'Physical evidence',
+        'Acute Injury Type (circle)' => 'Acute Injury Type (circle)',
+        'Pain' => 'pain',
+        'Other' => 'other',
+        'specify' => 'specify'
     );
 ?>
