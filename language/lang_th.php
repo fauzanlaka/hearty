@@ -56,7 +56,12 @@
         'choking chemicals' => 'สำลักสารเคมี',
         'Crush injuries' => 'บาดแผลจากแรงบด (เลือกและอธิบาย)',
         'smashing fingers' => 'บดนิ้วมือ',
-        'heavy roller to thighs/back' => 'ใช้ลูกกลิ้งหนักกดบริเวณโคนขาหรือแผ่นหลัง'
+        'heavy roller to thighs/back' => 'ใช้ลูกกลิ้งหนักกดบริเวณโคนขาหรือแผ่นหลัง',
+        'Physical evidence' => 'พยานหลักฐานทางร่างกาย',
+        'Acute Injury Type (circle)' => 'ลักษณะของอาการบาดเจ็บที่เกิดขึ้นแบบเฉียบพลัน (เลือก)',
+        'Pain' => 'เจ็บปวด',
+        'Other' => 'อื่นๆ',
+        'specify' => 'ระบุ'
     );
 ?>
 

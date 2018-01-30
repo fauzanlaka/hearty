@@ -56,6 +56,11 @@
         'choking chemicals' => 'choking chemicals',
         'Crush injuries' => 'crush injuries (check and Describe)',
         'smashing fingers' => 'smashing fingers',
-        'heavy roller to thighs/back' => 'heavy roller to thighs/back'
+        'heavy roller to thighs/back' => 'heavy roller to thighs/back',
+        'Physical evidence' => 'Physical evidence',
+        'Acute Injury Type (circle)' => 'Acute Injury Type (circle)',
+        'Pain' => 'pain',
+        'Other' => 'other',
+        'specify' => 'specify'
     );
 ?>
