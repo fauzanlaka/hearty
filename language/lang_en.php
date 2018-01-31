@@ -89,6 +89,15 @@
         'YesUsedto' => 'yes',
         'NoUsedto' => 'No',
         'After your release?' =>  'After your release?',
-        'receive any medical treatment' => 'Did you receive any medical treatment for physical or mental health problems' 
+        'receive any medical treatment' => 'Did you receive any medical treatment for physical or mental health problems',
+        'Penetrating injuries' => 'penetrating injuries (check and Describe)',
+        'stab and gunshot wounds' => 'stab and gunshot wounds',
+        'wires needles under nails' => 'wires needles under nails',
+        'toes in sensitive parts of the body' => 'toes in sensitive parts of the body',
+        
+        'Chemical exposures' => 'Chemical exposures (in wounds, body cavities) (check and describe)',
+        'gasoline' => 'gasoline',
+        'salt' => 'chili',
+        'chili' => 'chili'
     );
 ?>

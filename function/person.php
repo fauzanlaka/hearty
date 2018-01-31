@@ -727,6 +727,99 @@
             case 'pes_crush_injury_observation_en':
                 return str_replace("\'", "&#39;", $result["pes_crush_injury_observation_en"]);
                 break;
+            case 'pes_gunshot_wounds':
+                return str_replace("\'", "&#39;", $result["pes_gunshot_wounds"]);
+                break;
+            case 'pes_needles_under_nails':
+                return str_replace("\'", "&#39;", $result["pes_needles_under_nails"]);
+                break;
+            case 'pes_sensitive_of_body':
+                return str_replace("\'", "&#39;", $result["pes_sensitive_of_body"]);
+                break;
+            case 'pes_penetrating_injuries_explain_th':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_injuries_explain_th"]);
+                break;
+            case 'pes_penetrating_injuries_explain_en':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_injuries_explain_en"]);
+                break;
+            case 'pes_penetrating_frequency_th':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_frequency_th"]);
+                break;
+            case 'pes_penetrating_frequency_en':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_frequency_en"]);
+                break;
+            case 'pes_penetrating_duration_th':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_duration_th"]);
+                break;
+            case 'pes_penetrating_duration_en':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_duration_en"]);
+                break;
+            case 'pes_penetrating_restraint_th':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_restraint_th"]);
+                break;
+            case 'pes_penetrating_restraint_en':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_restraint_en"]);
+                break;
+            case 'pes_penetrating_injury_location_th':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_injury_location_th"]);
+                break;
+            case 'pes_penetrating_injury_location_en':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_injury_location_en"]);
+                break;
+            case 'pes_penetrating_injury_observations_th':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_injury_observations_th"]);
+                break;
+            case 'pes_penetrating_injury_observations_en':
+                return str_replace("\'", "&#39;", $result["pes_penetrating_injury_observations_en"]);
+                break;
+            case 'pes_chemical_gasoline':
+                return str_replace("\'", "&#39;", $result["pes_chemical_gasoline"]);
+                break;
+            case 'pes_chemical_salt':
+                return str_replace("\'", "&#39;", $result["pes_chemical_salt"]);
+                break;
+            case 'pes_chemical_chili':
+                return str_replace("\'", "&#39;", $result["pes_chemical_chili"]);
+                break;
+            case 'pes_chemical_other':
+                return str_replace("\'", "&#39;", $result["pes_chemical_other"]);
+                break;
+            case 'pes_chemical_explain_th':
+                return str_replace("\'", "&#39;", $result["pes_chemical_explain_th"]);
+                break;
+            case 'pes_chemical_explain_en':
+                return str_replace("\'", "&#39;", $result["pes_chemical_explain_en"]);
+                break;
+            case 'pes_chemical_frequency_th':
+                return str_replace("\'", "&#39;", $result["pes_chemical_frequency_th"]);
+                break;
+            case 'pes_chemical_frequency_en':
+                return str_replace("\'", "&#39;", $result["pes_chemical_frequency_en"]);
+                break;
+            case 'pes_chemical_duration_th':
+                return str_replace("\'", "&#39;", $result["pes_chemical_duration_th"]);
+                break;
+            case 'pes_chemical_duration_en':
+                return str_replace("\'", "&#39;", $result["pes_chemical_duration_en"]);
+                break;
+            case 'pes_chemical_restraint_th':
+                return str_replace("\'", "&#39;", $result["pes_chemical_restraint_th"]);
+                break;
+            case 'pes_chemical_restraint_en':
+                return str_replace("\'", "&#39;", $result["pes_chemical_restraint_en"]);
+                break;
+            case 'pes_chemical_injury_location_th':
+                return str_replace("\'", "&#39;", $result["pes_chemical_injury_location_th"]);
+                break;
+            case 'pes_chemical_injury_location_en':
+                return str_replace("\'", "&#39;", $result["pes_chemical_injury_location_en"]);
+                break;
+            case 'pes_chemical_injury_observation_th':
+                return str_replace("\'", "&#39;", $result["pes_chemical_injury_observation_th"]);
+                break;
+            case 'pes_chemical_injury_observation_en':
+                return str_replace("\'", "&#39;", $result["pes_chemical_injury_observation_en"]);
+                break;
         }
     }
 ?>

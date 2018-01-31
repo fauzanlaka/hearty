@@ -89,8 +89,15 @@
         'NoUsedto' => 'ไม่เคย',
         'After your release?' =>  'ภายหลังจากถูกปล่อยตัว?',
         'receive any medical treatment' => 'ท่านเคยได้รับการรักษาสุขภาพกายหรือปัญหาทางจิตหรือไม่',
-        'While you were detained?' => 'ในขณะที่ถูกกักขัง?'
-    
+        'While you were detained?' => 'ในขณะที่ถูกกักขัง?',
+        'Penetrating injuries' => 'บาดแผลจากการทิ่มแทง (เลือกและอธิบาย)',
+        'stab and gunshot wounds' => 'แผลจากการแทงหรือกระสุนปืน',
+        'wires needles under nails' => 'สอดลวดหรือเข็มเข้าใต้เล็บ',
+        'toes in sensitive parts of the body' => 'หัวแม่เท้าหรือบริเวณที่มีความรู้สึกไว',
+        'Chemical exposures' => 'การใช้สารเคมี (ใส่ในบาดแผลหรือรูพรุนตามร่างกาย) (เลือกและอธิบาย)',
+        'gasoline' => 'น้ำมัน',
+        'salt' => 'เกลือ',
+        'chili' => 'พริก'
     );
 ?>
 
