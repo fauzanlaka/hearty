@@ -682,6 +682,51 @@
             case 'pes_asphyxiation_injury_observations_en':
                 return str_replace("\'", "&#39;", $result["pes_asphyxiation_injury_observations_en"]);
                 break;
+            case 'pes_asphyxiation_injury_observations_en':
+                return str_replace("\'", "&#39;", $result["pes_asphyxiation_injury_observations_en"]);
+                break;
+            case 'pes_crush_smashing_fingers':
+                return str_replace("\'", "&#39;", $result["pes_crush_smashing_fingers"]);
+                break;
+            case 'pes_scrush_heavy_roller':
+                return str_replace("\'", "&#39;", $result["pes_scrush_heavy_roller"]);
+                break;
+            case 'pes_scrush_injuries_explain_th':
+                return str_replace("\'", "&#39;", $result["pes_scrush_injuries_explain_th"]);
+                break;
+            case 'pes_scrush_injuries_explain_en':
+                return str_replace("\'", "&#39;", $result["pes_scrush_injuries_explain_en"]);
+                break;
+            case 'pes_crush_frequency_th':
+                return str_replace("\'", "&#39;", $result["pes_crush_frequency_th"]);
+                break;
+            case 'pes_crush_frequency_en':
+                return str_replace("\'", "&#39;", $result["pes_crush_frequency_en"]);
+                break;
+            case 'pes_crush_duration_th':
+                return str_replace("\'", "&#39;", $result["pes_crush_duration_th"]);
+                break;
+            case 'pes_crush_duration_en':
+                return str_replace("\'", "&#39;", $result["pes_crush_duration_en"]);
+                break;
+            case 'pes_crush_restraint_th':
+                return str_replace("\'", "&#39;", $result["pes_crush_restraint_th"]);
+                break;
+            case 'pes_crush_restraint_en':
+                return str_replace("\'", "&#39;", $result["pes_crush_restraint_en"]);
+                break;
+            case 'pes_crush_injury_location_th':
+                return str_replace("\'", "&#39;", $result["pes_crush_injury_location_th"]);
+                break;
+            case 'pes_crush_injury_location_en':
+                return str_replace("\'", "&#39;", $result["pes_crush_injury_location_en"]);
+                break;
+            case 'pes_crush_injury_observation_th':
+                return str_replace("\'", "&#39;", $result["pes_crush_injury_observation_th"]);
+                break;
+            case 'pes_crush_injury_observation_en':
+                return str_replace("\'", "&#39;", $result["pes_crush_injury_observation_en"]);
+                break;
         }
     }
 ?>

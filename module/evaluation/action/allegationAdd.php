@@ -106,7 +106,15 @@
             'pes_asphyxiation_frequency_th' => addslashes($_POST['pes_asphyxiation_frequency_th']),
             'pes_asphyxiation_duration_th' => addslashes($_POST['pes_asphyxiation_duration_th']),
             'pes_asphyxiation_restraint_th' => addslashes($_POST['pes_asphyxiation_restraint_th']),
-            'pes_asphyxiation_injury_observations_th' => addslashes($_POST['pes_asphyxiation_injury_observations_th'])
+            'pes_asphyxiation_injury_observations_th' => addslashes($_POST['pes_asphyxiation_injury_observations_th']),
+            'pes_crush_smashing_fingers' => addslashes($_POST['pes_crush_smashing_fingers']),
+            'pes_scrush_heavy_roller' => addslashes($_POST['pes_scrush_heavy_roller']),
+            'pes_scrush_injuries_explain_th' => addslashes($_POST['pes_scrush_injuries_explain_th']),
+            'pes_crush_frequency_th' => addslashes($_POST['pes_crush_frequency_th']),
+            'pes_crush_duration_th' => addslashes($_POST['pes_crush_duration_th']),
+            'pes_crush_restraint_th' => addslashes($_POST['pes_crush_restraint_th']),
+            'pes_crush_injury_location_th' => addslashes($_POST['pes_crush_injury_location_th']),
+            'pes_crush_injury_observation_th' => addslashes($_POST['pes_crush_injury_observation_th'])
         );
     }else{
         $form_data = array(
@@ -210,7 +218,15 @@
             'pes_asphyxiation_frequency_en' => addslashes($_POST['pes_asphyxiation_frequency_en']),
             'pes_asphyxiation_duration_en' => addslashes($_POST['pes_asphyxiation_duration_en']),
             'pes_asphyxiation_restraint_en' => addslashes($_POST['pes_asphyxiation_restraint_en']),
-            'pes_asphyxiation_injury_observations_en' => addslashes($_POST['pes_asphyxiation_injury_observations_en'])
+            'pes_asphyxiation_injury_observations_en' => addslashes($_POST['pes_asphyxiation_injury_observations_en']),
+            'pes_crush_smashing_fingers' => addslashes($_POST['pes_crush_smashing_fingers']),
+            'pes_scrush_heavy_roller' => addslashes($_POST['pes_scrush_heavy_roller']),
+            'pes_scrush_injuries_explain_en' => addslashes($_POST['pes_scrush_injuries_explain_en']),
+            'pes_crush_frequency_en' => addslashes($_POST['pes_crush_frequency_en']),
+            'pes_crush_duration_en' => addslashes($_POST['pes_crush_duration_en']),
+            'pes_crush_restraint_en' => addslashes($_POST['pes_crush_restraint_en']),
+            'pes_crush_injury_location_en' => addslashes($_POST['pes_crush_injury_location_en']),
+            'pes_crush_injury_observation_en' => addslashes($_POST['pes_crush_injury_observation_en'])
         );
     }
     //echo "alert('$pes_id');";
