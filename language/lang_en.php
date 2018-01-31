@@ -62,6 +62,15 @@
         'Pain' => 'pain',
         'Other' => 'other',
         'specify' => 'specify',
-        'Laceration' => 'Laceration'
+        'Laceration' => 'Laceration',
+        'Penetrating injuries' => 'penetrating injuries (check and Describe)',
+        'stab and gunshot wounds' => 'stab and gunshot wounds',
+        'wires needles under nails' => 'wires needles under nails',
+        'toes in sensitive parts of the body' => 'toes in sensitive parts of the body',
+        
+        'Chemical exposures' => 'Chemical exposures (in wounds, body cavities) (check and describe)',
+        'gasoline' => 'gasoline',
+        'salt' => 'chili',
+        'chili' => 'chili'
     );
 ?>
